@@ -1,0 +1,702 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:47:01 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Tue Feb 28 16:46:22 2023
+# Process ID: 11833
+# Current directory: /home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Darticle-Detector-ARTY-A7/Darticle-Detector-ARTY-A7.runs/synth_1
+# Command line: vivado -log muon_telescope_top_module.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source muon_telescope_top_module.tcl
+# Log file: /home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Darticle-Detector-ARTY-A7/Darticle-Detector-ARTY-A7.runs/synth_1/muon_telescope_top_module.vds
+# Journal file: /home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Darticle-Detector-ARTY-A7/Darticle-Detector-ARTY-A7.runs/synth_1/vivado.jou
+# Running On: riccardo-ThinkPad-X1-Carbon-Gen-9, OS: Linux, CPU Frequency: 566.009 MHz, CPU Physical cores: 4, Host memory: 16484 MB
+#-----------------------------------------------------------
+source muon_telescope_top_module.tcl -notrace
+Command: synth_design -top muon_telescope_top_module -part xc7a35ticsg324-1L
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35ti'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35ti'
+INFO: [Device 21-403] Loading part xc7a35ticsg324-1L
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 11873
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2912.863 ; gain = 0.000 ; free physical = 6034 ; free virtual = 10530
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'muon_telescope_top_module' [/home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Firmware-SRC/muon_telescope_top.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'debouncing_array' [/home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Firmware-SRC/debouncing_array.sv:3]
+	Parameter N bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'db_fsm' [/home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Firmware-SRC/db_fsm.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'db_fsm' (0#1) [/home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Firmware-SRC/db_fsm.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'debouncing_array' (0#1) [/home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Firmware-SRC/debouncing_array.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'threshold_controller' [/home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Firmware-SRC/threshold_controller.sv:1]
+	Parameter N_P bound to: 12 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'threshold_controller' (0#1) [/home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Firmware-SRC/threshold_controller.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'XADC_module' [/home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Firmware-SRC/XADC_module.sv:73]
+	Parameter N_CH bound to: 2 - type: integer 
+	Parameter N_P bound to: 12 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'adc_demux' [/home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Firmware-SRC/adc_demux.sv:1]
+	Parameter N_P bound to: 12 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'adc_demux' (0#1) [/home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Firmware-SRC/adc_demux.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'xadc_wiz_0' [/home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Firmware-SRC/xadc__netlist.v:50]
+INFO: [Synth 8-6157] synthesizing module 'XADC' [/home/riccardo/XILINX/Vivado/2022.1/scripts/rt/data/unisim_comp.v:110146]
+	Parameter INIT_40 bound to: 16'b0000000000000000 
+	Parameter INIT_41 bound to: 16'b0010000100101111 
+	Parameter INIT_42 bound to: 16'b0000010000000000 
+	Parameter INIT_43 bound to: 16'b0000000000000000 
+	Parameter INIT_44 bound to: 16'b0000000000000000 
+	Parameter INIT_45 bound to: 16'b0000000000000000 
+	Parameter INIT_46 bound to: 16'b0000000000000000 
+	Parameter INIT_47 bound to: 16'b0000000000000000 
+	Parameter INIT_48 bound to: 16'b0000000000000000 
+	Parameter INIT_49 bound to: 16'b0000000000110000 
+	Parameter INIT_4A bound to: 16'b0000000000000000 
+	Parameter INIT_4B bound to: 16'b0000000000000000 
+	Parameter INIT_4C bound to: 16'b0000000000000000 
+	Parameter INIT_4D bound to: 16'b0000000000000000 
+	Parameter INIT_4E bound to: 16'b0000000000000000 
+	Parameter INIT_4F bound to: 16'b0000000000000000 
+	Parameter INIT_50 bound to: 16'b1011010111101101 
+	Parameter INIT_51 bound to: 16'b0101011111100100 
+	Parameter INIT_52 bound to: 16'b1010000101000111 
+	Parameter INIT_53 bound to: 16'b1100101000110011 
+	Parameter INIT_54 bound to: 16'b1010100100111010 
+	Parameter INIT_55 bound to: 16'b0101001011000110 
+	Parameter INIT_56 bound to: 16'b1001010101010101 
+	Parameter INIT_57 bound to: 16'b1010111001001110 
+	Parameter INIT_58 bound to: 16'b0101100110011001 
+	Parameter INIT_59 bound to: 16'b0000000000000000 
+	Parameter INIT_5A bound to: 16'b0000000000000000 
+	Parameter INIT_5B bound to: 16'b0000000000000000 
+	Parameter INIT_5C bound to: 16'b0101000100010001 
+	Parameter INIT_5D bound to: 16'b0000000000000000 
+	Parameter INIT_5E bound to: 16'b0000000000000000 
+	Parameter INIT_5F bound to: 16'b0000000000000000 
+	Parameter IS_CONVSTCLK_INVERTED bound to: 1'b0 
+	Parameter IS_DCLK_INVERTED bound to: 1'b0 
+	Parameter SIM_DEVICE bound to: 7SERIES - type: string 
+	Parameter SIM_MONITOR_FILE bound to: design.txt - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'XADC' (0#1) [/home/riccardo/XILINX/Vivado/2022.1/scripts/rt/data/unisim_comp.v:110146]
+INFO: [Synth 8-6155] done synthesizing module 'xadc_wiz_0' (0#1) [/home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Firmware-SRC/xadc__netlist.v:50]
+WARNING: [Synth 8-7071] port 'vauxn8' of module 'xadc_wiz_0' is unconnected for instance 'xadc_unit' [/home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Firmware-SRC/XADC_module.sv:119]
+WARNING: [Synth 8-7071] port 'vauxp9' of module 'xadc_wiz_0' is unconnected for instance 'xadc_unit' [/home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Firmware-SRC/XADC_module.sv:119]
+WARNING: [Synth 8-7023] instance 'xadc_unit' of module 'xadc_wiz_0' has 47 connections declared, but only 45 given [/home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Firmware-SRC/XADC_module.sv:119]
+INFO: [Synth 8-6155] done synthesizing module 'XADC_module' (0#1) [/home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Firmware-SRC/XADC_module.sv:73]
+INFO: [Synth 8-638] synthesizing module 'pmod_adc_ad7476a' [/home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Firmware-SRC/pmod_wrapper.vhd:41]
+	Parameter clk_freq bound to: 100 - type: integer 
+	Parameter spi_clk_div bound to: 3 - type: integer 
+	Parameter slaves bound to: 1 - type: integer 
+	Parameter d_width bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'spi_master_dual_miso' declared at '/home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Firmware-SRC/SPI_master_dual_miso.vhd:28' bound to instance 'spi_master_dual_miso_0' of component 'spi_master_dual_miso' [/home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Firmware-SRC/pmod_wrapper.vhd:75]
+INFO: [Synth 8-638] synthesizing module 'spi_master_dual_miso' [/home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Firmware-SRC/SPI_master_dual_miso.vhd:52]
+	Parameter slaves bound to: 1 - type: integer 
+	Parameter d_width bound to: 16 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'spi_master_dual_miso' (0#1) [/home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Firmware-SRC/SPI_master_dual_miso.vhd:52]
+INFO: [Synth 8-256] done synthesizing module 'pmod_adc_ad7476a' (0#1) [/home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Firmware-SRC/pmod_wrapper.vhd:41]
+INFO: [Synth 8-6157] synthesizing module 'DSP_pipeline' [/home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Firmware-SRC/DSP_pipeline.sv:1]
+	Parameter N_CH bound to: 4 - type: integer 
+	Parameter N_A bound to: 30 - type: integer 
+	Parameter N_P bound to: 12 - type: integer 
+	Parameter N_P_PADDING bound to: 13 - type: integer 
+	Parameter Size_log2 bound to: 20 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'left_padding_zero' [/home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Firmware-SRC/left_padding.sv:1]
+	Parameter N_IN bound to: 12 - type: integer 
+	Parameter N_OUT bound to: 13 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'left_padding_zero' (0#1) [/home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Firmware-SRC/left_padding.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'DC_Blocker' [/home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Firmware-SRC/DC_blocker.sv:1]
+	Parameter width bound to: 13 - type: integer 
+	Parameter Size_log2 bound to: 20 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'Module_FrequencyDivider' [/home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Firmware-SRC/Frequency_Divider.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'Module_FrequencyDivider' (0#1) [/home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Firmware-SRC/Frequency_Divider.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'DC_Blocker' (0#1) [/home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Firmware-SRC/DC_blocker.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'Trigger_Rise' [/home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Firmware-SRC/Trigger.sv:2]
+	Parameter width bound to: 13 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Trigger_Rise' (0#1) [/home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Firmware-SRC/Trigger.sv:2]
+INFO: [Synth 8-6157] synthesizing module 'Peak_Area_Detector' [/home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Firmware-SRC/Peak_detector.sv:1]
+	Parameter N_P bound to: 13 - type: integer 
+	Parameter N_A bound to: 30 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Peak_Area_Detector' (0#1) [/home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Firmware-SRC/Peak_detector.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'DSP_pipeline' (0#1) [/home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Firmware-SRC/DSP_pipeline.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'DAQ' [/home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Firmware-SRC/DAQ.sv:1]
+	Parameter N_CH bound to: 4 - type: integer 
+	Parameter N_T bound to: 32 - type: integer 
+	Parameter N_P bound to: 12 - type: integer 
+	Parameter N_A bound to: 30 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'Monostable_rise_only' [/home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Firmware-SRC/Monostable_rise_only.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'Monostable_rise_only' (0#1) [/home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Firmware-SRC/Monostable_rise_only.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'Buffers_reg_LATCH' [/home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Firmware-SRC/Buffers_reg.sv:1]
+	Parameter width bound to: 12 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Buffers_reg_LATCH' (0#1) [/home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Firmware-SRC/Buffers_reg.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'Buffers_reg_LATCH__parameterized0' [/home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Firmware-SRC/Buffers_reg.sv:1]
+	Parameter width bound to: 30 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Buffers_reg_LATCH__parameterized0' (0#1) [/home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Firmware-SRC/Buffers_reg.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'DAQ' (0#1) [/home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Firmware-SRC/DAQ.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'Module_Time_Measurement' [/home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Firmware-SRC/time_measurement.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'Module_SynchroCounter_4_bit' [/home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Firmware-SRC/SynchroCounter_4_bit.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'Module_SynchroCounter_4_bit' (0#1) [/home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Firmware-SRC/SynchroCounter_4_bit.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'Module_Time_Measurement' (0#1) [/home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Firmware-SRC/time_measurement.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'Printer_uart' [/home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Firmware-SRC/Printer_uart.sv:1]
+	Parameter N_T bound to: 32 - type: integer 
+	Parameter N_P bound to: 12 - type: integer 
+	Parameter N_A bound to: 30 - type: integer 
+	Parameter N_CH bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'fifo_generator_peak' [/home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Darticle-Detector-ARTY-A7/Darticle-Detector-ARTY-A7.runs/synth_1/.Xil/Vivado-11833-riccardo-ThinkPad-X1-Carbon-Gen-9/realtime/fifo_generator_peak_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_generator_peak' (0#1) [/home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Darticle-Detector-ARTY-A7/Darticle-Detector-ARTY-A7.runs/synth_1/.Xil/Vivado-11833-riccardo-ThinkPad-X1-Carbon-Gen-9/realtime/fifo_generator_peak_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'fifo_generator_area' [/home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Darticle-Detector-ARTY-A7/Darticle-Detector-ARTY-A7.runs/synth_1/.Xil/Vivado-11833-riccardo-ThinkPad-X1-Carbon-Gen-9/realtime/fifo_generator_area_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_generator_area' (0#1) [/home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Darticle-Detector-ARTY-A7/Darticle-Detector-ARTY-A7.runs/synth_1/.Xil/Vivado-11833-riccardo-ThinkPad-X1-Carbon-Gen-9/realtime/fifo_generator_area_stub.v:5]
+WARNING: [Synth 8-689] width (30) of port connection 'din' does not match port width (20) of module 'fifo_generator_area' [/home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Firmware-SRC/Printer_uart.sv:119]
+WARNING: [Synth 8-689] width (30) of port connection 'dout' does not match port width (20) of module 'fifo_generator_area' [/home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Firmware-SRC/Printer_uart.sv:122]
+WARNING: [Synth 8-689] width (30) of port connection 'din' does not match port width (20) of module 'fifo_generator_area' [/home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Firmware-SRC/Printer_uart.sv:119]
+WARNING: [Synth 8-689] width (30) of port connection 'dout' does not match port width (20) of module 'fifo_generator_area' [/home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Firmware-SRC/Printer_uart.sv:122]
+WARNING: [Synth 8-689] width (30) of port connection 'din' does not match port width (20) of module 'fifo_generator_area' [/home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Firmware-SRC/Printer_uart.sv:119]
+WARNING: [Synth 8-689] width (30) of port connection 'dout' does not match port width (20) of module 'fifo_generator_area' [/home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Firmware-SRC/Printer_uart.sv:122]
+WARNING: [Synth 8-689] width (30) of port connection 'din' does not match port width (20) of module 'fifo_generator_area' [/home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Firmware-SRC/Printer_uart.sv:119]
+WARNING: [Synth 8-689] width (30) of port connection 'dout' does not match port width (20) of module 'fifo_generator_area' [/home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Firmware-SRC/Printer_uart.sv:122]
+INFO: [Synth 8-6157] synthesizing module 'fifo_generator_time' [/home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Darticle-Detector-ARTY-A7/Darticle-Detector-ARTY-A7.runs/synth_1/.Xil/Vivado-11833-riccardo-ThinkPad-X1-Carbon-Gen-9/realtime/fifo_generator_time_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_generator_time' (0#1) [/home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Darticle-Detector-ARTY-A7/Darticle-Detector-ARTY-A7.runs/synth_1/.Xil/Vivado-11833-riccardo-ThinkPad-X1-Carbon-Gen-9/realtime/fifo_generator_time_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'Binary_to_BCD' [/home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Firmware-SRC/binary_BCD.sv:1]
+	Parameter INPUT_WIDTH bound to: 12 - type: integer 
+	Parameter DECIMAL_DIGITS bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Binary_to_BCD' (0#1) [/home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Firmware-SRC/binary_BCD.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'Binary_to_BCD__parameterized0' [/home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Firmware-SRC/binary_BCD.sv:1]
+	Parameter INPUT_WIDTH bound to: 30 - type: integer 
+	Parameter DECIMAL_DIGITS bound to: 9 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Binary_to_BCD__parameterized0' (0#1) [/home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Firmware-SRC/binary_BCD.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'uart' [/home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Firmware-SRC/uart.sv:1]
+	Parameter DBIT bound to: 8 - type: integer 
+	Parameter SB_TICK bound to: 16 - type: integer 
+	Parameter FIFO_W bound to: 5 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'baud_gen' [/home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Firmware-SRC/baud_gen.sv:4]
+INFO: [Synth 8-6155] done synthesizing module 'baud_gen' (0#1) [/home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Firmware-SRC/baud_gen.sv:4]
+INFO: [Synth 8-6157] synthesizing module 'uart_rx' [/home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Firmware-SRC/uart_rx.sv:2]
+	Parameter DBIT bound to: 8 - type: integer 
+	Parameter SB_TICK bound to: 16 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [/home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Firmware-SRC/uart_rx.sv:47]
+INFO: [Synth 8-6155] done synthesizing module 'uart_rx' (0#1) [/home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Firmware-SRC/uart_rx.sv:2]
+INFO: [Synth 8-6157] synthesizing module 'uart_tx' [/home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Firmware-SRC/uart_tx.sv:2]
+	Parameter DBIT bound to: 8 - type: integer 
+	Parameter SB_TICK bound to: 16 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [/home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Firmware-SRC/uart_tx.sv:52]
+INFO: [Synth 8-6155] done synthesizing module 'uart_tx' (0#1) [/home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Firmware-SRC/uart_tx.sv:2]
+INFO: [Synth 8-6157] synthesizing module 'fifo_generator_uart' [/home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Darticle-Detector-ARTY-A7/Darticle-Detector-ARTY-A7.runs/synth_1/.Xil/Vivado-11833-riccardo-ThinkPad-X1-Carbon-Gen-9/realtime/fifo_generator_uart_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_generator_uart' (0#1) [/home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Darticle-Detector-ARTY-A7/Darticle-Detector-ARTY-A7.runs/synth_1/.Xil/Vivado-11833-riccardo-ThinkPad-X1-Carbon-Gen-9/realtime/fifo_generator_uart_stub.v:5]
+WARNING: [Synth 8-689] width (8) of port connection 'dout' does not match port width (18) of module 'fifo_generator_uart' [/home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Firmware-SRC/uart.sv:38]
+WARNING: [Synth 8-689] width (8) of port connection 'dout' does not match port width (18) of module 'fifo_generator_uart' [/home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Firmware-SRC/uart.sv:49]
+INFO: [Synth 8-6155] done synthesizing module 'uart' (0#1) [/home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Firmware-SRC/uart.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'Printer_uart' (0#1) [/home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Firmware-SRC/Printer_uart.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'test_unit' [/home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Firmware-SRC/test_unit.sv:1]
+	Parameter N_CH bound to: 4 - type: integer 
+	Parameter N_P bound to: 12 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'Monostable' [/home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Firmware-SRC/Monostable.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'Monostable' (0#1) [/home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Firmware-SRC/Monostable.sv:1]
+WARNING: [Synth 8-7071] port 'reset' of module 'Module_FrequencyDivider' is unconnected for instance 'f_1HZ_DIVIDER' [/home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Firmware-SRC/test_unit.sv:29]
+WARNING: [Synth 8-7023] instance 'f_1HZ_DIVIDER' of module 'Module_FrequencyDivider' has 4 connections declared, but only 3 given [/home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Firmware-SRC/test_unit.sv:29]
+INFO: [Synth 8-6155] done synthesizing module 'test_unit' (0#1) [/home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Firmware-SRC/test_unit.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'muon_telescope_top_module' (0#1) [/home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Firmware-SRC/muon_telescope_top.sv:53]
+WARNING: [Synth 8-7137] Register state_reg_reg in module Peak_Area_Detector has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Firmware-SRC/Peak_detector.sv:86]
+WARNING: [Synth 8-7137] Register coincidence_flag_old_reg in module DAQ has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Firmware-SRC/DAQ.sv:115]
+WARNING: [Synth 8-7137] Register start_conversion_peak_reg in module Printer_uart has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Firmware-SRC/Printer_uart.sv:177]
+WARNING: [Synth 8-7137] Register Converter_peak_assigned_reg in module Printer_uart has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Firmware-SRC/Printer_uart.sv:178]
+WARNING: [Synth 8-7137] Register start_conversion_area_reg in module Printer_uart has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Firmware-SRC/Printer_uart.sv:179]
+WARNING: [Synth 8-7137] Register Converter_area_assigned_reg in module Printer_uart has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Firmware-SRC/Printer_uart.sv:180]
+WARNING: [Synth 8-7137] Register CONTROL_STATE_reg in module Printer_uart has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Firmware-SRC/Printer_uart.sv:185]
+WARNING: [Synth 8-7137] Register A_peak_event_reg_reg in module Printer_uart has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code 
+WARNING: [Synth 8-7137] Register A_area_event_reg_reg in module Printer_uart has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code 
+WARNING: [Synth 8-7137] Register A_peak_event_BCD_reg in module Printer_uart has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code 
+WARNING: [Synth 8-7137] Register A_area_event_BCD_reg in module Printer_uart has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code 
+WARNING: [Synth 8-7137] Register threshold_BCD_reg_reg in module Printer_uart has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Firmware-SRC/Printer_uart.sv:317]
+WARNING: [Synth 8-4767] Trying to implement RAM 'A_peak_event_BCD_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: RAM is sensitive to asynchronous reset signal. this RTL style is not supported. 
+RAM "A_peak_event_BCD_reg" dissolved into registers
+WARNING: [Synth 8-4767] Trying to implement RAM 'A_area_event_BCD_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: RAM is sensitive to asynchronous reset signal. this RTL style is not supported. 
+RAM "A_area_event_BCD_reg" dissolved into registers
+WARNING: [Synth 8-4767] Trying to implement RAM 'A_peak_event_reg_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: RAM is sensitive to asynchronous reset signal. this RTL style is not supported. 
+RAM "A_peak_event_reg_reg" dissolved into registers
+WARNING: [Synth 8-4767] Trying to implement RAM 'A_area_event_reg_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: RAM is sensitive to asynchronous reset signal. this RTL style is not supported. 
+RAM "A_area_event_reg_reg" dissolved into registers
+WARNING: [Synth 8-7129] Port A_pulse[3] in module test_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_pulse[2] in module test_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_pulse[1] in module test_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DAQ_pulse in module test_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port peak_ready[3] in module test_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port peak_ready[2] in module test_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port area_ready[3] in module test_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port area_ready[2] in module test_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DC_subtracted[3] in module test_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DC_subtracted[2] in module test_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port posedge_flag[3] in module test_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port posedge_flag[2] in module test_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port over_threshold[3] in module test_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port over_threshold[2] in module test_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_area_event[3][29] in module Printer_uart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_area_event[3][28] in module Printer_uart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_area_event[3][27] in module Printer_uart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_area_event[3][26] in module Printer_uart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_area_event[3][25] in module Printer_uart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_area_event[3][24] in module Printer_uart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_area_event[3][23] in module Printer_uart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_area_event[3][22] in module Printer_uart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_area_event[3][21] in module Printer_uart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_area_event[3][20] in module Printer_uart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_area_event[2][29] in module Printer_uart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_area_event[2][28] in module Printer_uart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_area_event[2][27] in module Printer_uart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_area_event[2][26] in module Printer_uart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_area_event[2][25] in module Printer_uart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_area_event[2][24] in module Printer_uart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_area_event[2][23] in module Printer_uart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_area_event[2][22] in module Printer_uart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_area_event[2][21] in module Printer_uart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_area_event[2][20] in module Printer_uart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_area_event[1][29] in module Printer_uart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_area_event[1][28] in module Printer_uart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_area_event[1][27] in module Printer_uart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_area_event[1][26] in module Printer_uart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_area_event[1][25] in module Printer_uart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_area_event[1][24] in module Printer_uart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_area_event[1][23] in module Printer_uart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_area_event[1][22] in module Printer_uart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_area_event[1][21] in module Printer_uart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_area_event[1][20] in module Printer_uart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_area_event[0][29] in module Printer_uart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_area_event[0][28] in module Printer_uart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_area_event[0][27] in module Printer_uart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_area_event[0][26] in module Printer_uart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_area_event[0][25] in module Printer_uart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_area_event[0][24] in module Printer_uart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_area_event[0][23] in module Printer_uart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_area_event[0][22] in module Printer_uart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_area_event[0][21] in module Printer_uart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_area_event[0][20] in module Printer_uart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port adc_data[3] in module adc_demux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port adc_data[2] in module adc_demux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port adc_data[1] in module adc_demux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port adc_data[0] in module adc_demux is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2912.863 ; gain = 0.000 ; free physical = 7051 ; free virtual = 11551
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2912.863 ; gain = 0.000 ; free physical = 7078 ; free virtual = 11578
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2912.863 ; gain = 0.000 ; free physical = 7078 ; free virtual = 11578
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2912.863 ; gain = 0.000 ; free physical = 7046 ; free virtual = 11546
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/riccardo/Documenti/FPGAtmos_pARTYcle_detector.gen/sources_1/ip/fifo_generator_time/fifo_generator_time/fifo_generator_time_in_context.xdc] for cell 'PRINT_DATA_VIA_UART_CABLE/FIFO_TIME'
+Finished Parsing XDC File [/home/riccardo/Documenti/FPGAtmos_pARTYcle_detector.gen/sources_1/ip/fifo_generator_time/fifo_generator_time/fifo_generator_time_in_context.xdc] for cell 'PRINT_DATA_VIA_UART_CABLE/FIFO_TIME'
+Parsing XDC File [/home/riccardo/Documenti/FPGAtmos_pARTYcle_detector.gen/sources_1/ip/fifo_generator_area/fifo_generator_area/fifo_generator_area_in_context.xdc] for cell 'PRINT_DATA_VIA_UART_CABLE/fifo_peak_generation[0].FIFO_AREA'
+Finished Parsing XDC File [/home/riccardo/Documenti/FPGAtmos_pARTYcle_detector.gen/sources_1/ip/fifo_generator_area/fifo_generator_area/fifo_generator_area_in_context.xdc] for cell 'PRINT_DATA_VIA_UART_CABLE/fifo_peak_generation[0].FIFO_AREA'
+Parsing XDC File [/home/riccardo/Documenti/FPGAtmos_pARTYcle_detector.gen/sources_1/ip/fifo_generator_area/fifo_generator_area/fifo_generator_area_in_context.xdc] for cell 'PRINT_DATA_VIA_UART_CABLE/fifo_peak_generation[1].FIFO_AREA'
+Finished Parsing XDC File [/home/riccardo/Documenti/FPGAtmos_pARTYcle_detector.gen/sources_1/ip/fifo_generator_area/fifo_generator_area/fifo_generator_area_in_context.xdc] for cell 'PRINT_DATA_VIA_UART_CABLE/fifo_peak_generation[1].FIFO_AREA'
+Parsing XDC File [/home/riccardo/Documenti/FPGAtmos_pARTYcle_detector.gen/sources_1/ip/fifo_generator_area/fifo_generator_area/fifo_generator_area_in_context.xdc] for cell 'PRINT_DATA_VIA_UART_CABLE/fifo_peak_generation[2].FIFO_AREA'
+Finished Parsing XDC File [/home/riccardo/Documenti/FPGAtmos_pARTYcle_detector.gen/sources_1/ip/fifo_generator_area/fifo_generator_area/fifo_generator_area_in_context.xdc] for cell 'PRINT_DATA_VIA_UART_CABLE/fifo_peak_generation[2].FIFO_AREA'
+Parsing XDC File [/home/riccardo/Documenti/FPGAtmos_pARTYcle_detector.gen/sources_1/ip/fifo_generator_area/fifo_generator_area/fifo_generator_area_in_context.xdc] for cell 'PRINT_DATA_VIA_UART_CABLE/fifo_peak_generation[3].FIFO_AREA'
+Finished Parsing XDC File [/home/riccardo/Documenti/FPGAtmos_pARTYcle_detector.gen/sources_1/ip/fifo_generator_area/fifo_generator_area/fifo_generator_area_in_context.xdc] for cell 'PRINT_DATA_VIA_UART_CABLE/fifo_peak_generation[3].FIFO_AREA'
+Parsing XDC File [/home/riccardo/Documenti/FPGAtmos_pARTYcle_detector.gen/sources_1/ip/fifo_generator_uart/fifo_generator_uart/fifo_generator_uart_in_context.xdc] for cell 'PRINT_DATA_VIA_UART_CABLE/UART_MODULE/fifo_rx_unit'
+Finished Parsing XDC File [/home/riccardo/Documenti/FPGAtmos_pARTYcle_detector.gen/sources_1/ip/fifo_generator_uart/fifo_generator_uart/fifo_generator_uart_in_context.xdc] for cell 'PRINT_DATA_VIA_UART_CABLE/UART_MODULE/fifo_rx_unit'
+Parsing XDC File [/home/riccardo/Documenti/FPGAtmos_pARTYcle_detector.gen/sources_1/ip/fifo_generator_uart/fifo_generator_uart/fifo_generator_uart_in_context.xdc] for cell 'PRINT_DATA_VIA_UART_CABLE/UART_MODULE/fifo_tx_unit'
+Finished Parsing XDC File [/home/riccardo/Documenti/FPGAtmos_pARTYcle_detector.gen/sources_1/ip/fifo_generator_uart/fifo_generator_uart/fifo_generator_uart_in_context.xdc] for cell 'PRINT_DATA_VIA_UART_CABLE/UART_MODULE/fifo_tx_unit'
+Parsing XDC File [/home/riccardo/Documenti/FPGAtmos_pARTYcle_detector.gen/sources_1/ip/fifo_generator_peak/fifo_generator_peak/fifo_generator_peak_in_context.xdc] for cell 'PRINT_DATA_VIA_UART_CABLE/fifo_peak_generation[0].FIFO_PEAK'
+Finished Parsing XDC File [/home/riccardo/Documenti/FPGAtmos_pARTYcle_detector.gen/sources_1/ip/fifo_generator_peak/fifo_generator_peak/fifo_generator_peak_in_context.xdc] for cell 'PRINT_DATA_VIA_UART_CABLE/fifo_peak_generation[0].FIFO_PEAK'
+Parsing XDC File [/home/riccardo/Documenti/FPGAtmos_pARTYcle_detector.gen/sources_1/ip/fifo_generator_peak/fifo_generator_peak/fifo_generator_peak_in_context.xdc] for cell 'PRINT_DATA_VIA_UART_CABLE/fifo_peak_generation[1].FIFO_PEAK'
+Finished Parsing XDC File [/home/riccardo/Documenti/FPGAtmos_pARTYcle_detector.gen/sources_1/ip/fifo_generator_peak/fifo_generator_peak/fifo_generator_peak_in_context.xdc] for cell 'PRINT_DATA_VIA_UART_CABLE/fifo_peak_generation[1].FIFO_PEAK'
+Parsing XDC File [/home/riccardo/Documenti/FPGAtmos_pARTYcle_detector.gen/sources_1/ip/fifo_generator_peak/fifo_generator_peak/fifo_generator_peak_in_context.xdc] for cell 'PRINT_DATA_VIA_UART_CABLE/fifo_peak_generation[2].FIFO_PEAK'
+Finished Parsing XDC File [/home/riccardo/Documenti/FPGAtmos_pARTYcle_detector.gen/sources_1/ip/fifo_generator_peak/fifo_generator_peak/fifo_generator_peak_in_context.xdc] for cell 'PRINT_DATA_VIA_UART_CABLE/fifo_peak_generation[2].FIFO_PEAK'
+Parsing XDC File [/home/riccardo/Documenti/FPGAtmos_pARTYcle_detector.gen/sources_1/ip/fifo_generator_peak/fifo_generator_peak/fifo_generator_peak_in_context.xdc] for cell 'PRINT_DATA_VIA_UART_CABLE/fifo_peak_generation[3].FIFO_PEAK'
+Finished Parsing XDC File [/home/riccardo/Documenti/FPGAtmos_pARTYcle_detector.gen/sources_1/ip/fifo_generator_peak/fifo_generator_peak/fifo_generator_peak_in_context.xdc] for cell 'PRINT_DATA_VIA_UART_CABLE/fifo_peak_generation[3].FIFO_PEAK'
+Parsing XDC File [/home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Firmware-XDC/Arty-A7-35-Master.xdc]
+Finished Parsing XDC File [/home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Firmware-XDC/Arty-A7-35-Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Firmware-XDC/Arty-A7-35-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/muon_telescope_top_module_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/muon_telescope_top_module_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2976.895 ; gain = 0.000 ; free physical = 6991 ; free virtual = 11521
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2976.895 ; gain = 0.000 ; free physical = 6991 ; free virtual = 11521
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2976.895 ; gain = 64.031 ; free physical = 7075 ; free virtual = 11588
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35ticsg324-1L
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2976.895 ; gain = 64.031 ; free physical = 7075 ; free virtual = 11588
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for PRINT_DATA_VIA_UART_CABLE/FIFO_TIME. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for PRINT_DATA_VIA_UART_CABLE/\fifo_peak_generation[0].FIFO_AREA . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for PRINT_DATA_VIA_UART_CABLE/\fifo_peak_generation[1].FIFO_AREA . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for PRINT_DATA_VIA_UART_CABLE/\fifo_peak_generation[2].FIFO_AREA . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for PRINT_DATA_VIA_UART_CABLE/\fifo_peak_generation[3].FIFO_AREA . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for PRINT_DATA_VIA_UART_CABLE/UART_MODULE/fifo_rx_unit. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for PRINT_DATA_VIA_UART_CABLE/UART_MODULE/fifo_tx_unit. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for PRINT_DATA_VIA_UART_CABLE/\fifo_peak_generation[0].FIFO_PEAK . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for PRINT_DATA_VIA_UART_CABLE/\fifo_peak_generation[1].FIFO_PEAK . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for PRINT_DATA_VIA_UART_CABLE/\fifo_peak_generation[2].FIFO_PEAK . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for PRINT_DATA_VIA_UART_CABLE/\fifo_peak_generation[3].FIFO_PEAK . (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2976.895 ; gain = 64.031 ; free physical = 7075 ; free virtual = 11588
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg_reg' in module 'db_fsm'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg_reg' in module 'DAQ'
+INFO: [Synth 8-802] inferred FSM for state register 'r_SM_Main_reg' in module 'Binary_to_BCD'
+INFO: [Synth 8-802] inferred FSM for state register 'r_SM_Main_reg' in module 'Binary_to_BCD__parameterized0'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg_reg' in module 'uart_rx'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg_reg' in module 'uart_tx'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg_reg' in module 'Printer_uart'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    zero |                              000 | 00000000000000000000000000000000
+                 wait1_1 |                              001 | 00000000000000000000000000000001
+                 wait1_2 |                              010 | 00000000000000000000000000000010
+                 wait1_3 |                              011 | 00000000000000000000000000000011
+                     one |                              100 | 00000000000000000000000000000100
+                 wait0_1 |                              101 | 00000000000000000000000000000101
+                 wait0_2 |                              110 | 00000000000000000000000000000110
+                 wait0_3 |                              111 | 00000000000000000000000000000111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg_reg' using encoding 'sequential' in module 'db_fsm'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                             0001 | 00000000000000000000000000000000
+           WAITING_STORE |                             0010 | 00000000000000000000000000000001
+              SEND_PULSE |                             0100 | 00000000000000000000000000000010
+                   RESET |                             1000 | 00000000000000000000000000000011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg_reg' using encoding 'one-hot' in module 'DAQ'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                               00 | 00000000000000000000000000000000
+                   start |                               01 | 00000000000000000000000000000001
+                    data |                               10 | 00000000000000000000000000000010
+                    stop |                               11 | 00000000000000000000000000000011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg_reg' using encoding 'sequential' in module 'uart_rx'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                               00 | 00000000000000000000000000000000
+                   start |                               01 | 00000000000000000000000000000001
+                    data |                               10 | 00000000000000000000000000000010
+                    stop |                               11 | 00000000000000000000000000000011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg_reg' using encoding 'sequential' in module 'uart_tx'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                             0000 | 00000000000000000000000000000000
+               FILL_TIME |                             0001 | 00000000000000000000000000000010
+              FILL_PEAKS |                             0010 | 00000000000000000000000000000011
+              FILL_AREAS |                             0011 | 00000000000000000000000000000100
+               SEND_TIME |                             0100 | 00000000000000000000000000000001
+                BCD_PEAK |                             0101 | 00000000000000000000000000000101
+                BCD_AREA |                             0110 | 00000000000000000000000000000110
+           BCD_THRESHOLD |                             0111 | 00000000000000000000000000000111
+               SEND_PEAK |                             1000 | 00000000000000000000000000001000
+               SEND_AREA |                             1001 | 00000000000000000000000000001001
+          SEND_THRESHOLD |                             1010 | 00000000000000000000000000001010
+             FINAL_STATE |                             1011 | 00000000000000000000000000001011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg_reg' using encoding 'sequential' in module 'Printer_uart'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2976.895 ; gain = 64.031 ; free physical = 7072 ; free virtual = 11587
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 1     
+	   2 Input   30 Bit       Adders := 15    
+	   3 Input   13 Bit       Adders := 4     
+	   2 Input   12 Bit       Adders := 1     
+	   2 Input   11 Bit       Adders := 1     
+	   2 Input    9 Bit       Adders := 1     
+	   2 Input    8 Bit       Adders := 7     
+	   3 Input    7 Bit       Adders := 1     
+	   2 Input    6 Bit       Adders := 4     
+	   2 Input    5 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 20    
+	   2 Input    3 Bit       Adders := 2     
++---Registers : 
+	               36 Bit    Registers := 5     
+	               33 Bit    Registers := 5     
+	               32 Bit    Registers := 4     
+	               30 Bit    Registers := 18    
+	               20 Bit    Registers := 6     
+	               16 Bit    Registers := 5     
+	               13 Bit    Registers := 4     
+	               12 Bit    Registers := 12    
+	               11 Bit    Registers := 1     
+	                9 Bit    Registers := 2     
+	                8 Bit    Registers := 9     
+	                6 Bit    Registers := 2     
+	                5 Bit    Registers := 2     
+	                4 Bit    Registers := 12    
+	                3 Bit    Registers := 2     
+	                1 Bit    Registers := 140   
++---Muxes : 
+	   2 Input   36 Bit        Muxes := 1     
+	   7 Input   36 Bit        Muxes := 2     
+	   4 Input   36 Bit        Muxes := 1     
+	  12 Input   36 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 3     
+	  12 Input   32 Bit        Muxes := 1     
+	   2 Input   30 Bit        Muxes := 8     
+	   4 Input   30 Bit        Muxes := 9     
+	   7 Input   30 Bit        Muxes := 1     
+	   2 Input   20 Bit        Muxes := 1     
+	   7 Input   20 Bit        Muxes := 2     
+	   4 Input   20 Bit        Muxes := 2     
+	  12 Input   20 Bit        Muxes := 2     
+	   2 Input   16 Bit        Muxes := 2     
+	   2 Input   13 Bit        Muxes := 4     
+	   8 Input   12 Bit        Muxes := 2     
+	   7 Input   12 Bit        Muxes := 1     
+	   4 Input   12 Bit        Muxes := 2     
+	  12 Input   12 Bit        Muxes := 1     
+	   2 Input   11 Bit        Muxes := 1     
+	   2 Input    9 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 15    
+	   4 Input    8 Bit        Muxes := 1     
+	  12 Input    8 Bit        Muxes := 5     
+	   2 Input    6 Bit        Muxes := 2     
+	   2 Input    5 Bit        Muxes := 2     
+	   2 Input    4 Bit        Muxes := 25    
+	   4 Input    4 Bit        Muxes := 2     
+	   3 Input    4 Bit        Muxes := 1     
+	  12 Input    4 Bit        Muxes := 2     
+	   8 Input    3 Bit        Muxes := 4     
+	   2 Input    3 Bit        Muxes := 32    
+	   4 Input    3 Bit        Muxes := 6     
+	   7 Input    3 Bit        Muxes := 2     
+	   3 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 2     
+	   4 Input    2 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 195   
+	   8 Input    1 Bit        Muxes := 4     
+	   4 Input    1 Bit        Muxes := 37    
+	   7 Input    1 Bit        Muxes := 8     
+	  12 Input    1 Bit        Muxes := 29    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port A_pulse[3] in module test_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_pulse[2] in module test_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_pulse[1] in module test_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DAQ_pulse in module test_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port peak_ready[3] in module test_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port peak_ready[2] in module test_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port area_ready[3] in module test_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port area_ready[2] in module test_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DC_subtracted[3] in module test_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DC_subtracted[2] in module test_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port posedge_flag[3] in module test_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port posedge_flag[2] in module test_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port over_threshold[3] in module test_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port over_threshold[2] in module test_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_area_event[3][29] in module Printer_uart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_area_event[3][28] in module Printer_uart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_area_event[3][27] in module Printer_uart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_area_event[3][26] in module Printer_uart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_area_event[3][25] in module Printer_uart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_area_event[3][24] in module Printer_uart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_area_event[3][23] in module Printer_uart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_area_event[3][22] in module Printer_uart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_area_event[3][21] in module Printer_uart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_area_event[3][20] in module Printer_uart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_area_event[2][29] in module Printer_uart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_area_event[2][28] in module Printer_uart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_area_event[2][27] in module Printer_uart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_area_event[2][26] in module Printer_uart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_area_event[2][25] in module Printer_uart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_area_event[2][24] in module Printer_uart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_area_event[2][23] in module Printer_uart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_area_event[2][22] in module Printer_uart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_area_event[2][21] in module Printer_uart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_area_event[2][20] in module Printer_uart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_area_event[1][29] in module Printer_uart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_area_event[1][28] in module Printer_uart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_area_event[1][27] in module Printer_uart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_area_event[1][26] in module Printer_uart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_area_event[1][25] in module Printer_uart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_area_event[1][24] in module Printer_uart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_area_event[1][23] in module Printer_uart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_area_event[1][22] in module Printer_uart is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-3332] Sequential element (DEBOUNCING_MODULES[1]/FSM_sequential_state_reg_reg[2]) is unused and will be removed from module debouncing_array.
+WARNING: [Synth 8-3332] Sequential element (DEBOUNCING_MODULES[1]/FSM_sequential_state_reg_reg[1]) is unused and will be removed from module debouncing_array.
+WARNING: [Synth 8-3332] Sequential element (DEBOUNCING_MODULES[1]/FSM_sequential_state_reg_reg[0]) is unused and will be removed from module debouncing_array.
+WARNING: [Synth 8-3332] Sequential element (DEBOUNCING_MODULES[0]/FSM_sequential_state_reg_reg[2]) is unused and will be removed from module debouncing_array.
+WARNING: [Synth 8-3332] Sequential element (DEBOUNCING_MODULES[0]/FSM_sequential_state_reg_reg[1]) is unused and will be removed from module debouncing_array.
+WARNING: [Synth 8-3332] Sequential element (DEBOUNCING_MODULES[0]/FSM_sequential_state_reg_reg[0]) is unused and will be removed from module debouncing_array.
+WARNING: [Synth 8-3332] Sequential element (i_0) is unused and will be removed from module pmod_adc_ad7476a.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 2976.895 ; gain = 64.031 ; free physical = 7052 ; free virtual = 11550
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 2976.895 ; gain = 64.031 ; free physical = 6900 ; free virtual = 11410
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 2976.895 ; gain = 64.031 ; free physical = 6895 ; free virtual = 11405
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 2976.895 ; gain = 64.031 ; free physical = 6881 ; free virtual = 11392
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 2976.895 ; gain = 64.031 ; free physical = 6897 ; free virtual = 11404
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 2976.895 ; gain = 64.031 ; free physical = 6897 ; free virtual = 11404
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 2976.895 ; gain = 64.031 ; free physical = 6897 ; free virtual = 11404
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 2976.895 ; gain = 64.031 ; free physical = 6897 ; free virtual = 11404
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 2976.895 ; gain = 64.031 ; free physical = 6897 ; free virtual = 11404
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 2976.895 ; gain = 64.031 ; free physical = 6897 ; free virtual = 11404
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------------+----------+
+|      |BlackBox name       |Instances |
++------+--------------------+----------+
+|1     |fifo_generator_peak |         4|
+|2     |fifo_generator_area |         4|
+|3     |fifo_generator_time |         1|
+|4     |fifo_generator_uart |         2|
++------+--------------------+----------+
+
+Report Cell Usage: 
++------+--------------------+------+
+|      |Cell                |Count |
++------+--------------------+------+
+|1     |fifo_generator_area |     4|
+|5     |fifo_generator_peak |     4|
+|9     |fifo_generator_time |     1|
+|10    |fifo_generator_uart |     2|
+|12    |BUFG                |     3|
+|13    |CARRY4              |   433|
+|14    |LUT1                |   151|
+|15    |LUT2                |  1338|
+|16    |LUT3                |   712|
+|17    |LUT4                |   529|
+|18    |LUT5                |   287|
+|19    |LUT6                |   426|
+|20    |MUXF7               |     1|
+|21    |XADC                |     1|
+|22    |FDCE                |  1160|
+|23    |FDPE                |     5|
+|24    |FDRE                |  1300|
+|25    |FDSE                |     2|
+|26    |IBUF                |    28|
+|27    |OBUF                |    21|
++------+--------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 2976.895 ; gain = 64.031 ; free physical = 6897 ; free virtual = 11404
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 62 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 2976.895 ; gain = 0.000 ; free physical = 6952 ; free virtual = 11459
+Synthesis Optimization Complete : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 2976.895 ; gain = 64.031 ; free physical = 6952 ; free virtual = 11459
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2976.895 ; gain = 0.000 ; free physical = 7058 ; free virtual = 11566
+INFO: [Netlist 29-17] Analyzing 435 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 2 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2976.895 ; gain = 0.000 ; free physical = 6961 ; free virtual = 11471
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: 5703aaac
+INFO: [Common 17-83] Releasing license: Synthesis
+104 Infos, 139 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:33 ; elapsed = 00:00:31 . Memory (MB): peak = 2976.895 ; gain = 64.031 ; free physical = 7161 ; free virtual = 11671
+INFO: [Common 17-1381] The checkpoint '/home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Darticle-Detector-ARTY-A7/Darticle-Detector-ARTY-A7.runs/synth_1/muon_telescope_top_module.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file muon_telescope_top_module_utilization_synth.rpt -pb muon_telescope_top_module_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Feb 28 16:47:01 2023...

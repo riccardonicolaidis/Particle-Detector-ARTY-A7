@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a35ticsg324-1L" LaunchTime="1677599130">
+  <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
+  <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS" Name="muon_telescope_top_module_postroute_physopted.rqs"/>
+  <File Type="ROUTE-RQS" Name="muon_telescope_top_module_routed.rqs"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="BG-DRC" Name="muon_telescope_top_module.drc"/>
+  <File Type="BG-BGN" Name="muon_telescope_top_module.bgn"/>
+  <File Type="BITSTR-SYSDEF" Name="muon_telescope_top_module.sysdef"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="muon_telescope_top_module.ltx"/>
+  <File Type="RBD_FILE" Name="muon_telescope_top_module.rbd"/>
+  <File Type="NPI_FILE" Name="muon_telescope_top_module.npi"/>
+  <File Type="RNPI_FILE" Name="muon_telescope_top_module.rnpi"/>
+  <File Type="CFI_FILE" Name="muon_telescope_top_module.cfi"/>
+  <File Type="RCFI_FILE" Name="muon_telescope_top_module.rcfi"/>
+  <File Type="RDI-RDI" Name="muon_telescope_top_module.vdi"/>
+  <File Type="PDI-FILE" Name="muon_telescope_top_module.pdi"/>
+  <File Type="BITSTR-MMI" Name="muon_telescope_top_module.mmi"/>
+  <File Type="BITSTR-BMM" Name="muon_telescope_top_module_bd.bmm"/>
+  <File Type="BITSTR-NKY" Name="muon_telescope_top_module.nky"/>
+  <File Type="BITSTR-RBT" Name="muon_telescope_top_module.rbt"/>
+  <File Type="BITSTR-MSK" Name="muon_telescope_top_module.msk"/>
+  <File Type="BG-BIN" Name="muon_telescope_top_module.bin"/>
+  <File Type="BG-BIT" Name="muon_telescope_top_module.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="muon_telescope_top_module_bus_skew_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="muon_telescope_top_module_bus_skew_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="muon_telescope_top_module_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="muon_telescope_top_module_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="muon_telescope_top_module_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="muon_telescope_top_module_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="muon_telescope_top_module_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="muon_telescope_top_module_postroute_physopt.dcp"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="muon_telescope_top_module_bus_skew_routed.rpx"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="muon_telescope_top_module_postplace_pwropt.dcp"/>
+  <File Type="PLACE-UTIL-PB" Name="muon_telescope_top_module_utilization_placed.pb"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="muon_telescope_top_module_methodology_drc_opted.rpt"/>
+  <File Type="PLACE-UTIL" Name="muon_telescope_top_module_utilization_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="muon_telescope_top_module_clock_utilization_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="muon_telescope_top_module_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="OPT-HWDEF" Name="muon_telescope_top_module.hwdef"/>
+  <File Type="PLACE-IO" Name="muon_telescope_top_module_io_placed.rpt"/>
+  <File Type="PHYSOPT-TIMING" Name="muon_telescope_top_module_timing_summary_physopted.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="muon_telescope_top_module_incremental_reuse_placed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="muon_telescope_top_module_methodology_drc_routed.pb"/>
+  <File Type="PLACE-DCP" Name="muon_telescope_top_module_placed.dcp"/>
+  <File Type="PWROPT-TIMING" Name="muon_telescope_top_module_timing_summary_pwropted.rpt"/>
+  <File Type="OPT-DRC" Name="muon_telescope_top_module_drc_opted.rpt"/>
+  <File Type="PLACE-TIMING" Name="muon_telescope_top_module_timing_summary_placed.rpt"/>
+  <File Type="PWROPT-DRC" Name="muon_telescope_top_module_drc_pwropted.rpt"/>
+  <File Type="INIT-TIMING" Name="muon_telescope_top_module_timing_summary_init.rpt"/>
+  <File Type="PA-TCL" Name="muon_telescope_top_module.tcl"/>
+  <File Type="PLACE-CTRL" Name="muon_telescope_top_module_control_sets_placed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="muon_telescope_top_module_methodology_drc_routed.rpt"/>
+  <File Type="OPT-DCP" Name="muon_telescope_top_module_opt.dcp"/>
+  <File Type="REPORTS-TCL" Name="muon_telescope_top_module_reports.tcl"/>
+  <File Type="OPT-TIMING" Name="muon_telescope_top_module_timing_summary_opted.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="muon_telescope_top_module_incremental_reuse_pre_placed.rpt"/>
+  <File Type="ROUTE-DRC-RPX" Name="muon_telescope_top_module_drc_routed.rpx"/>
+  <File Type="PWROPT-DCP" Name="muon_telescope_top_module_pwropt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="muon_telescope_top_module_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="muon_telescope_top_module_drc_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="muon_telescope_top_module_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="muon_telescope_top_module_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="muon_telescope_top_module_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="muon_telescope_top_module_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="muon_telescope_top_module_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-DRC-PB" Name="muon_telescope_top_module_drc_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="muon_telescope_top_module_power_routed.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="muon_telescope_top_module_power_summary_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="muon_telescope_top_module_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="muon_telescope_top_module_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="muon_telescope_top_module_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="muon_telescope_top_module_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="muon_telescope_top_module_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="muon_telescope_top_module_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="muon_telescope_top_module_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="muon_telescope_top_module_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="muon_telescope_top_module_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="muon_telescope_top_module_bus_skew_routed.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/../Firmware-SRC/xadc__netlist.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Firmware-SRC/Buffers_reg.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Firmware-SRC/DAQ.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Firmware-SRC/DC_blocker.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Firmware-SRC/DSP_pipeline.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Firmware-SRC/Frequency_Divider.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Firmware-SRC/Monostable.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Firmware-SRC/Monostable_rise_only.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Firmware-SRC/Peak_detector.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Firmware-SRC/Printer_uart.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Firmware-SRC/SynchroCounter_4_bit.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Firmware-SRC/Trigger.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Firmware-SRC/XADC_module.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Firmware-SRC/adc_demux.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Firmware-SRC/baud_gen.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Firmware-SRC/binary_BCD.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Firmware-SRC/db_fsm.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Firmware-SRC/debouncing_array.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Firmware-SRC/left_padding.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Firmware-SRC/test_unit.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Firmware-SRC/threshold_controller.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Firmware-SRC/time_measurement.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Firmware-SRC/uart.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Firmware-SRC/uart_rx.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Firmware-SRC/uart_tx.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Firmware-SRC/SPI_master_dual_miso.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Firmware-SRC/pmod_wrapper.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Firmware-SRC/muon_telescope_top.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Firmware-SRC/RGB_manager.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Firmware-SRC/SynchroCounter.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Firmware-SRC/ctrl_console_start_stop_clear.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Firmware-SRC/ctrl_volume.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Firmware-SRC/fifo.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Firmware-SRC/fifo_ctrl.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Firmware-SRC/pwm_RGB.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Firmware-SRC/reg_file.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Firmware-SRC/toggle_ff.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="muon_telescope_top_module"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PPRDIR/../Firmware-XDC/Arty-A7-35-Master.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2022">
+      <Desc>Default settings for Implementation.</Desc>
+    </StratHandle>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="fifo_generator_peak"/>
+  <BlockFileSet Type="BlockSrcs" Name="fifo_generator_uart"/>
+  <BlockFileSet Type="BlockSrcs" Name="fifo_generator_area"/>
+  <BlockFileSet Type="BlockSrcs" Name="fifo_generator_time"/>
+</GenRun>
