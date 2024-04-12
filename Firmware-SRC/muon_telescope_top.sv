@@ -98,16 +98,17 @@ wire [10:0] dvsr;
 */                       
 /********************************************************************************************/
 /****/  parameter N_XADC_CH           = 2;  // Number of channels (XADC)                /****/ 
+/****/  parameter N_XADC_CH_TOREAD    = 0; // Number of channels to read (XADC)         /****/
 /****/  parameter N_PMOD              = 1;  // Number of Pmods                          /****/
-/****/  parameter N_CH                = N_XADC_CH + 2*N_PMOD; // Tot number channles    /****/  
-/****/  parameter N_T                 = 32; // Number of bits from TIME MEASURING       /****/  
+/****/  parameter N_CH                = N_XADC_CH_TOREAD + 2*N_PMOD; // Tot channles    /****/  
+/****/  parameter N_T                 = 48; // Number of bits from TIME MEASURING       /****/  
 /****/  parameter N_A                 = 30; // Number of bits for Area measurement      /****/  
 /****/  parameter N_P                 = 12; // Number of bits for peak detection        /****/ 
 /****/  parameter N_P_PADDING         = 13; // Number of bits for peak detection PADDED /****/
 /****/  parameter Size_log2           = 20; // Number of samples for average (log 2)    /****/
 /****/  assign disable_time           = 30'd600;   // coincidence detection             /****/  
 /****/  assign number_samples_to_skip = 30'd20;                                         /****/
-/****/  assign dvsr                   = 11'd80;                                         /****/
+/****/  assign dvsr                   = 11'd53;                                         /****/
 /********************************************************************************************/
 
 // Divisor table for UART BAUD RATE
@@ -188,23 +189,26 @@ THRESHOLD_CONTROLLER
 // **************************************
 //  XADC WRAPPING CIRCUIT 
 // **************************************
-
-XADC_module 
-#(
-    .N_CH(N_XADC_CH),   // Number of channels (only XADC)
-    .N_P(N_P)           // Number of bits 12
-)
-XADC_WRAPPING_CIRCUIT
-(
-    .clk(clk),                        // clock 
-    .reset(reset_low),                // reset low 
-    .adc_a_p(adc_a_p),                // input analog  
-    .adc_a_n(adc_a_n),                // input analog
-    .vp_in(vp_in),                    // dedicated analog +
-    .vn_in(vn_in),                    // dedicated analog -
-    .A(A[N_XADC_CH-1:0]),             // A Digitalized 12-bit OUT
-    .A_pulse(A_pulse[N_XADC_CH-1:0])  // A ready pulse 
-);
+generate
+    if(N_XADC_CH_TOREAD > 0) begin
+        XADC_module 
+        #(
+            .N_CH(N_XADC_CH),   // Number of channels (only XADC)
+            .N_P(N_P)           // Number of bits 12
+        )
+        XADC_WRAPPING_CIRCUIT
+        (
+            .clk(clk),                        // clock 
+            .reset(reset_low),                // reset low 
+            .adc_a_p(adc_a_p),                // input analog  
+            .adc_a_n(adc_a_n),                // input analog
+            .vp_in(vp_in),                    // dedicated analog +
+            .vn_in(vn_in),                    // dedicated analog -
+            .A(A[N_XADC_CH_TOREAD-1:0]),             // A Digitalized 12-bit OUT
+            .A_pulse(A_pulse[N_XADC_CH_TOREAD-1:0])  // A ready pulse 
+        );
+    end
+endgenerate
 
 // *****************************************
 //      PMOD_ADC_WRAPPING_CIRCUIT

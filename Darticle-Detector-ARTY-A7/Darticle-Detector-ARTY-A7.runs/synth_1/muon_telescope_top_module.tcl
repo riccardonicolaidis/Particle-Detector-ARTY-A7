@@ -70,6 +70,8 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
+set_param xicom.use_bs_reader 1
+set_param chipscope.maxJobs 2
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a35ticsg324-1L
 
@@ -148,6 +150,8 @@ read_xdc /home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/
 set_property used_in_implementation false [get_files /home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Firmware-XDC/Arty-A7-35-Master.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
+
+read_checkpoint -auto_incremental -incremental /home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Darticle-Detector-ARTY-A7/Darticle-Detector-ARTY-A7.srcs/utils_1/imports/synth_1/muon_telescope_top_module.dcp
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }

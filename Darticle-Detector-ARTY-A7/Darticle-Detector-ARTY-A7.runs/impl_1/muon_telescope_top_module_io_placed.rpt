@@ -1,8 +1,8 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------
 | Tool Version              : Vivado v.2022.1 (lin64) Build 3526262 Mon Apr 18 15:47:01 MDT 2022
-| Date                      : Tue Feb 28 16:47:36 2023
-| Host                      : riccardo-ThinkPad-X1-Carbon-Gen-9 running 64-bit Ubuntu 22.04.2 LTS
+| Date                      : Fri Apr 12 23:49:03 2024
+| Host                      : riccardo-ThinkPad-X1-Carbon-Gen-9 running 64-bit Ubuntu 22.04.4 LTS
 | Command                   : report_io -file muon_telescope_top_module_io_placed.rpt
 | Design                    : muon_telescope_top_module
 | Device                    : xc7a35ti
@@ -188,7 +188,7 @@ Table of Contents
 | J7         |             |            | VCCINT                       | VCCINT      |             |         |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
 | J8         |             |            | GND                          | GND         |             |         |            |      |                     |                      |     0.0 |            |           |          |      |                  |              |                   |              |
 | J9         |             | Dedicated  | VREFN_0                      | XADC        |             |       0 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
-| J10        | vp_in       | Dedicated  | VP_0                         | INPUT       | LVCMOS18*   |       0 |            |      |                     |                 NONE |         | FIXED      |           |          |      | NONE             |              |                   |              |
+| J10        |             | Dedicated  | VP_0                         | XADC        |             |       0 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
 | J11        |             |            | VCCINT                       | VCCINT      |             |         |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
 | J12        |             |            | GND                          | GND         |             |         |            |      |                     |                      |     0.0 |            |           |          |      |                  |              |                   |              |
 | J13        |             | High Range | IO_L17N_T2_A25_15            | User IO     |             |      15 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
@@ -205,7 +205,7 @@ Table of Contents
 | K6         |             | High Range | IO_0_34                      | User IO     |             |      34 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
 | K7         |             |            | GND                          | GND         |             |         |            |      |                     |                      |     0.0 |            |           |          |      |                  |              |                   |              |
 | K8         |             |            | VCCINT                       | VCCINT      |             |         |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
-| K9         | vn_in       | Dedicated  | VN_0                         | INPUT       | LVCMOS18*   |       0 |            |      |                     |                 NONE |         | FIXED      |           |          |      | NONE             |              |                   |              |
+| K9         |             | Dedicated  | VN_0                         | XADC        |             |       0 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
 | K10        |             | Dedicated  | VREFP_0                      | XADC        |             |       0 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
 | K11        |             |            | GND                          | GND         |             |         |            |      |                     |                      |     0.0 |            |           |          |      |                  |              |                   |              |
 | K12        |             |            | VCCAUX                       | VCCAUX      |             |         |            |      |                     |                      |    1.80 |            |           |          |      |                  |              |                   |              |

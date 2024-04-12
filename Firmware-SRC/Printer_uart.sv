@@ -1,6 +1,6 @@
 module Printer_uart
 #(
-    parameter N_T = 32,
+    parameter N_T = 48,
               N_P = 12,
               N_A = 20,
               N_CH = 6
@@ -44,6 +44,30 @@ wire [N_T-1:0] time_event_fifo;                // Time of the event
 wire [N_P-1:0] A_peak_event_fifo [N_CH-1:0];   // Peak values array of the event
 wire [N_A-1:0] A_area_event_fifo [N_CH-1:0];   // Peak values array of the event
 
+
+// Wires to monitor the full status of the FIFO buffers
+wire [N_CH-1:0] wb_FullFifo_Peak;               // Wire bus with fifo full signal Peak
+wire [N_CH-1:0] wb_FullFifo_Area;               // Wire bus with fifo full signal Area
+wire            w_FullFifo_Time;                // Wire with fifo full signal Time
+wire [N_CH-1:0] wb_EmptyFifo_Peak;              // Wire bus with fifo empty signal Peak
+wire [N_CH-1:0] wb_EmptyFifo_Area;              // Wire bus with fifo empty signal Area
+wire            w_EmptyFifo_Time;               // Wire with fifo empty signal Time
+
+wire w_AllEmptyFifo_Peak;
+wire w_AllEmptyFifo_Area;
+
+assign w_AllEmptyFifo_Peak = &wb_EmptyFifo_Peak;
+assign w_AllEmptyFifo_Area = &wb_EmptyFifo_Area;
+assign empty_fifo = w_EmptyFifo_Time & w_AllEmptyFifo_Peak & w_AllEmptyFifo_Area;
+
+wire w_AtLeastOneFullFifo_Peak;
+wire w_AtLeastOneFullFifo_Area;
+wire w_AtLeastOneFullFifo;
+
+assign w_AtLeastOneFullFifo_Peak = |wb_FullFifo_Peak;
+assign w_AtLeastOneFullFifo_Area = |wb_FullFifo_Area;
+assign w_AtLeastOneFullFifo = w_AtLeastOneFullFifo_Peak | w_AtLeastOneFullFifo_Area | w_FullFifo_Time;
+
 // Segnali che pilotano il fifo_controller 
 logic read_pulse_reg;               // reg
 
@@ -82,17 +106,58 @@ logic [3:0]                      CONTROL_STATE;                 // reg Stato di 
 
 // #######################################################################################################
 
+// Now I need to define a FSM for managing the fifo buffers
+// If the fifos are fulls I need to wait until they are empty
+// Then, I reenamble the DAQ_pulse signal
+
+typedef enum {FIFO_READ_ENABLED,
+              FIFO_READ_DISABLED} state_FSM_FIFO;
+
+state_FSM_FIFO state_reg_FIFO;    // reg state
+logic          FIFO_enabled_reg;  // reg
+
+
+
+always_ff @(posedge clk, posedge reset) begin
+    if(reset) begin
+        state_reg_FIFO <= FIFO_READ_DISABLED;     // If reset go to idle
+    end
+    else begin
+        case (state_reg_FIFO)         // Now I explain the behaviour of the finite state machine 
+            FIFO_READ_ENABLED : begin
+                if(w_AtLeastOneFullFifo) begin
+                    state_reg_FIFO <= FIFO_READ_DISABLED;
+                end
+            end
+            FIFO_READ_DISABLED : begin
+                if(empty_fifo) begin
+                    state_reg_FIFO <= FIFO_READ_ENABLED;
+                end
+            end
+            default: begin 
+                state_reg_FIFO <= FIFO_READ_DISABLED;
+            end
+        endcase
+    end
+end
+
+assign FIFO_enabled_reg = (state_reg_FIFO == FIFO_READ_ENABLED);
+
+
+
+// #######################################################################################################
+
 // FIFO FOR TIME STORAGE
 fifo_generator_time FIFO_TIME       
 (
-  .clk(clk),                                // input wire clk
-  .srst(reset),                             // input wire srst
-  .din(time_event),                         // input wire [11 : 0] din
-  .wr_en(DAQ_pulse &(!DAQ_pulse_old)),      // input wire wr_en
-  .rd_en(read_pulse_reg),                   // input wire rd_en
-  .dout(time_event_fifo),                   // output wire [11 : 0] dout
-  .full(),                                  // output wire full
-  .empty(empty_fifo)                        // output wire empty
+  .clk(clk),                                                    // input wire clk
+  .srst(reset),                                                 // input wire srst
+  .din(time_event),                                             // input wire [11 : 0] din
+  .wr_en(DAQ_pulse &(!DAQ_pulse_old)& FIFO_enabled_reg),        // input wire wr_en
+  .rd_en(read_pulse_reg),                                       // input wire rd_en
+  .dout(time_event_fifo),                                       // output wire [11 : 0] dout
+  .full(w_FullFifo_Time),                                       // output wire full
+  .empty(w_EmptyFifo_Time)                                      // output wire empty
 );
 
 
@@ -102,30 +167,33 @@ generate      // Generate construct to parallelise the structure
     for(i=0; i<=(N_CH-1);i=i+1) begin : fifo_peak_generation
         fifo_generator_peak FIFO_PEAK
         (
-            .clk(clk),                            // input wire clk
-            .srst(reset),                         // input wire srst
-            .din(A_peak_event[i]),                // input wire [11 : 0] din
-            .wr_en(DAQ_pulse &(!DAQ_pulse_old)),  // input wire wr_en
-            .rd_en(read_pulse_reg),               // input wire rd_en
-            .dout(A_peak_event_fifo[i]),          // output wire [11 : 0] dout
-            .full(),                              // output wire full
-            .empty()                              // output wire empty
+            .clk(clk),                                                  // input wire clk
+            .srst(reset),                                               // input wire srst
+            .din(A_peak_event[i]),                                      // input wire [11 : 0] din
+            .wr_en(DAQ_pulse &(!DAQ_pulse_old) & FIFO_enabled_reg),     // input wire wr_en
+            .rd_en(read_pulse_reg),                                     // input wire rd_en
+            .dout(A_peak_event_fifo[i]),                                // output wire [11 : 0] dout
+            .full(wb_FullFifo_Peak[i]),                                 // output wire full
+            .empty(wb_EmptyFifo_Peak[i])                                // output wire empty
         );
 
         fifo_generator_area FIFO_AREA
         (
-            .clk(clk),                            // input wire clk
-            .srst(reset),                         // input wire srst
-            .din(A_area_event[i]),                // input wire [11 : 0] din
-            .wr_en(DAQ_pulse&(!DAQ_pulse_old)),   // input wire wr_en
-            .rd_en(read_pulse_reg),               // input wire rd_en
-            .dout(A_area_event_fifo[i]),          // output wire [11 : 0] dout
-            .full(),                              // output wire full
-            .empty()                              // output wire empty
+            .clk(clk),                                              // input wire clk
+            .srst(reset),                                           // input wire srst
+            .din(A_area_event[i]),                                  // input wire [11 : 0] din
+            .wr_en(DAQ_pulse&(!DAQ_pulse_old)& FIFO_enabled_reg),   // input wire wr_en
+            .rd_en(read_pulse_reg),                                 // input wire rd_en
+            .dout(A_area_event_fifo[i]),                            // output wire [11 : 0] dout
+            .full(wb_FullFifo_Area[i]),                             // output wire full
+            .empty(wb_EmptyFifo_Area[i])                            // output wire empty
         );
 
     end
 endgenerate
+
+
+
 
 
 // Now I need to define the states of the FSMs
@@ -185,7 +253,7 @@ always_ff @(posedge clk, posedge reset) begin
                 CONTROL_STATE             <= 4'd0;
                 if(!empty_fifo) begin           // If fifo is not empty anymore 
                     state_reg             <= FILL_TIME;
-                    counter_digit         <= 8'd9;
+                    counter_digit         <= 8'd12;
                     CONTROL_STATE         <= 4'd1;
                 end else begin
                     counter_digit         <= 8'd0;

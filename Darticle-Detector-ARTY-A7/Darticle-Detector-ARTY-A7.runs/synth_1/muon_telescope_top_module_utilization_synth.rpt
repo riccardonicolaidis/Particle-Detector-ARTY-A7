@@ -1,8 +1,8 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2022.1 (lin64) Build 3526262 Mon Apr 18 15:47:01 MDT 2022
-| Date         : Tue Feb 28 16:47:01 2023
-| Host         : riccardo-ThinkPad-X1-Carbon-Gen-9 running 64-bit Ubuntu 22.04.2 LTS
+| Date         : Fri Apr 12 23:48:31 2024
+| Host         : riccardo-ThinkPad-X1-Carbon-Gen-9 running 64-bit Ubuntu 22.04.4 LTS
 | Command      : report_utilization -file muon_telescope_top_module_utilization_synth.rpt -pb muon_telescope_top_module_utilization_synth.pb
 | Design       : muon_telescope_top_module
 | Device       : xc7a35ticsg324-1L
@@ -31,13 +31,13 @@ Table of Contents
 +-------------------------+------+-------+------------+-----------+-------+
 |        Site Type        | Used | Fixed | Prohibited | Available | Util% |
 +-------------------------+------+-------+------------+-----------+-------+
-| Slice LUTs*             | 2502 |     0 |          0 |     20800 | 12.03 |
-|   LUT as Logic          | 2502 |     0 |          0 |     20800 | 12.03 |
+| Slice LUTs*             | 1852 |     0 |          0 |     20800 |  8.90 |
+|   LUT as Logic          | 1852 |     0 |          0 |     20800 |  8.90 |
 |   LUT as Memory         |    0 |     0 |          0 |      9600 |  0.00 |
-| Slice Registers         | 2467 |     0 |          0 |     41600 |  5.93 |
-|   Register as Flip Flop | 2467 |     0 |          0 |     41600 |  5.93 |
+| Slice Registers         | 1747 |     0 |          0 |     41600 |  4.20 |
+|   Register as Flip Flop | 1747 |     0 |          0 |     41600 |  4.20 |
 |   Register as Latch     |    0 |     0 |          0 |     41600 |  0.00 |
-| F7 Muxes                |    1 |     0 |          0 |     16300 | <0.01 |
+| F7 Muxes                |    0 |     0 |          0 |     16300 |  0.00 |
 | F8 Muxes                |    0 |     0 |          0 |      8150 |  0.00 |
 +-------------------------+------+-------+------------+-----------+-------+
 * Warning! The Final LUT count, after physical optimizations and full implementation, is typically lower. Run opt_design after synthesis, if not already completed, for a more realistic count.
@@ -56,9 +56,9 @@ Table of Contents
 | 0     |            _ |       Reset |            - |
 | 0     |          Yes |           - |            - |
 | 5     |          Yes |           - |          Set |
-| 1160  |          Yes |           - |        Reset |
+| 763   |          Yes |           - |        Reset |
 | 2     |          Yes |         Set |            - |
-| 1300  |          Yes |       Reset |            - |
+| 977   |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -88,23 +88,23 @@ Table of Contents
 4. IO and GT Specific
 ---------------------
 
-+-----------------------------+------+-------+------------+-----------+--------+
-|          Site Type          | Used | Fixed | Prohibited | Available |  Util% |
-+-----------------------------+------+-------+------------+-----------+--------+
-| Bonded IOB                  |   49 |     0 |          0 |       210 |  23.33 |
-| Bonded IPADs                |    2 |     0 |          0 |         2 | 100.00 |
-| PHY_CONTROL                 |    0 |     0 |          0 |         5 |   0.00 |
-| PHASER_REF                  |    0 |     0 |          0 |         5 |   0.00 |
-| OUT_FIFO                    |    0 |     0 |          0 |        20 |   0.00 |
-| IN_FIFO                     |    0 |     0 |          0 |        20 |   0.00 |
-| IDELAYCTRL                  |    0 |     0 |          0 |         5 |   0.00 |
-| IBUFDS                      |    0 |     0 |          0 |       202 |   0.00 |
-| PHASER_OUT/PHASER_OUT_PHY   |    0 |     0 |          0 |        20 |   0.00 |
-| PHASER_IN/PHASER_IN_PHY     |    0 |     0 |          0 |        20 |   0.00 |
-| IDELAYE2/IDELAYE2_FINEDELAY |    0 |     0 |          0 |       250 |   0.00 |
-| ILOGIC                      |    0 |     0 |          0 |       210 |   0.00 |
-| OLOGIC                      |    0 |     0 |          0 |       210 |   0.00 |
-+-----------------------------+------+-------+------------+-----------+--------+
++-----------------------------+------+-------+------------+-----------+-------+
+|          Site Type          | Used | Fixed | Prohibited | Available | Util% |
++-----------------------------+------+-------+------------+-----------+-------+
+| Bonded IOB                  |   31 |     0 |          0 |       210 | 14.76 |
+| Bonded IPADs                |    0 |     0 |          0 |         2 |  0.00 |
+| PHY_CONTROL                 |    0 |     0 |          0 |         5 |  0.00 |
+| PHASER_REF                  |    0 |     0 |          0 |         5 |  0.00 |
+| OUT_FIFO                    |    0 |     0 |          0 |        20 |  0.00 |
+| IN_FIFO                     |    0 |     0 |          0 |        20 |  0.00 |
+| IDELAYCTRL                  |    0 |     0 |          0 |         5 |  0.00 |
+| IBUFDS                      |    0 |     0 |          0 |       202 |  0.00 |
+| PHASER_OUT/PHASER_OUT_PHY   |    0 |     0 |          0 |        20 |  0.00 |
+| PHASER_IN/PHASER_IN_PHY     |    0 |     0 |          0 |        20 |  0.00 |
+| IDELAYE2/IDELAYE2_FINEDELAY |    0 |     0 |          0 |       250 |  0.00 |
+| ILOGIC                      |    0 |     0 |          0 |       210 |  0.00 |
+| OLOGIC                      |    0 |     0 |          0 |       210 |  0.00 |
++-----------------------------+------+-------+------------+-----------+-------+
 
 
 5. Clocking
@@ -113,7 +113,7 @@ Table of Contents
 +------------+------+-------+------------+-----------+-------+
 |  Site Type | Used | Fixed | Prohibited | Available | Util% |
 +------------+------+-------+------------+-----------+-------+
-| BUFGCTRL   |    3 |     0 |          0 |        32 |  9.38 |
+| BUFGCTRL   |    1 |     0 |          0 |        32 |  3.13 |
 | BUFIO      |    0 |     0 |          0 |        20 |  0.00 |
 | MMCME2_ADV |    0 |     0 |          0 |         5 |  0.00 |
 | PLLE2_ADV  |    0 |     0 |          0 |         5 |  0.00 |
@@ -126,19 +126,19 @@ Table of Contents
 6. Specific Feature
 -------------------
 
-+-------------+------+-------+------------+-----------+--------+
-|  Site Type  | Used | Fixed | Prohibited | Available |  Util% |
-+-------------+------+-------+------------+-----------+--------+
-| BSCANE2     |    0 |     0 |          0 |         4 |   0.00 |
-| CAPTUREE2   |    0 |     0 |          0 |         1 |   0.00 |
-| DNA_PORT    |    0 |     0 |          0 |         1 |   0.00 |
-| EFUSE_USR   |    0 |     0 |          0 |         1 |   0.00 |
-| FRAME_ECCE2 |    0 |     0 |          0 |         1 |   0.00 |
-| ICAPE2      |    0 |     0 |          0 |         2 |   0.00 |
-| PCIE_2_1    |    0 |     0 |          0 |         1 |   0.00 |
-| STARTUPE2   |    0 |     0 |          0 |         1 |   0.00 |
-| XADC        |    1 |     0 |          0 |         1 | 100.00 |
-+-------------+------+-------+------------+-----------+--------+
++-------------+------+-------+------------+-----------+-------+
+|  Site Type  | Used | Fixed | Prohibited | Available | Util% |
++-------------+------+-------+------------+-----------+-------+
+| BSCANE2     |    0 |     0 |          0 |         4 |  0.00 |
+| CAPTUREE2   |    0 |     0 |          0 |         1 |  0.00 |
+| DNA_PORT    |    0 |     0 |          0 |         1 |  0.00 |
+| EFUSE_USR   |    0 |     0 |          0 |         1 |  0.00 |
+| FRAME_ECCE2 |    0 |     0 |          0 |         1 |  0.00 |
+| ICAPE2      |    0 |     0 |          0 |         2 |  0.00 |
+| PCIE_2_1    |    0 |     0 |          0 |         1 |  0.00 |
+| STARTUPE2   |    0 |     0 |          0 |         1 |  0.00 |
+| XADC        |    0 |     0 |          0 |         1 |  0.00 |
++-------------+------+-------+------------+-----------+-------+
 
 
 7. Primitives
@@ -147,22 +147,20 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| LUT2     | 1338 |                 LUT |
-| FDRE     | 1300 |        Flop & Latch |
-| FDCE     | 1160 |        Flop & Latch |
-| LUT3     |  712 |                 LUT |
-| LUT4     |  529 |                 LUT |
-| CARRY4   |  433 |          CarryLogic |
-| LUT6     |  426 |                 LUT |
-| LUT5     |  287 |                 LUT |
-| LUT1     |  151 |                 LUT |
-| IBUF     |   30 |                  IO |
+| LUT2     |  991 |                 LUT |
+| FDRE     |  977 |        Flop & Latch |
+| FDCE     |  763 |        Flop & Latch |
+| LUT3     |  646 |                 LUT |
+| LUT4     |  348 |                 LUT |
+| LUT6     |  339 |                 LUT |
+| CARRY4   |  297 |          CarryLogic |
+| LUT5     |  223 |                 LUT |
+| LUT1     |   79 |                 LUT |
 | OBUF     |   21 |                  IO |
+| IBUF     |   10 |                  IO |
 | FDPE     |    5 |        Flop & Latch |
-| BUFG     |    3 |               Clock |
 | FDSE     |    2 |        Flop & Latch |
-| XADC     |    1 |              Others |
-| MUXF7    |    1 |               MuxFx |
+| BUFG     |    1 |               Clock |
 +----------+------+---------------------+
 
 
@@ -172,9 +170,9 @@ Table of Contents
 +---------------------+------+
 |       Ref Name      | Used |
 +---------------------+------+
-| fifo_generator_peak |    4 |
-| fifo_generator_area |    4 |
 | fifo_generator_uart |    2 |
+| fifo_generator_peak |    2 |
+| fifo_generator_area |    2 |
 | fifo_generator_time |    1 |
 +---------------------+------+
 

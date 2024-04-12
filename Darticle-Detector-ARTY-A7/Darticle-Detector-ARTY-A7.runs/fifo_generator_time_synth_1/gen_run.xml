@@ -1,14 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="fifo_generator_time_synth_1" LaunchPart="xc7a35ticsg324-1L" LaunchTime="1677599130">
-  <File Type="VDS-TIMINGSUMMARY" Name="fifo_generator_time_timing_summary_synth.rpt"/>
-  <File Type="RDS-DCP" Name="fifo_generator_time.dcp"/>
-  <File Type="RDS-UTIL-PB" Name="fifo_generator_time_utilization_synth.pb"/>
-  <File Type="RDS-UTIL" Name="fifo_generator_time_utilization_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="fifo_generator_time_timing_summary_synth.pb"/>
+<GenRun Id="fifo_generator_time_synth_1" LaunchPart="xc7a35ticsg324-1L" LaunchTime="1712579777">
   <File Type="PA-TCL" Name="fifo_generator_time.tcl"/>
   <File Type="REPORTS-TCL" Name="fifo_generator_time_reports.tcl"/>
   <File Type="RDS-RDS" Name="fifo_generator_time.vds"/>
-  <File Type="RDS-PROPCONSTRS" Name="fifo_generator_time_drc_synth.rpt"/>
+  <File Type="RDS-DCP" Name="fifo_generator_time.dcp"/>
   <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/fifo_generator_time">
     <File Path="$PPRDIR/../Firmware-SRC/fifo_generator_time/fifo_generator_time.xci">
       <FileInfo>
@@ -37,14 +32,20 @@
   </FileSet>
   <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
     <Filter Type="Utils"/>
+    <File Path="$PSRCDIR/utils_1/imports/synth_1/muon_telescope_top_module.dcp">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="synth_1"/>
+        <Attr Name="AutoDcp" Val="1"/>
+      </FileInfo>
+    </File>
     <Config>
       <Option Name="TopAutoSet" Val="TRUE"/>
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022">
-      <Desc>Vivado Synthesis Defaults</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022"/>
     <Step Id="synth_design"/>
   </Strategy>
 </GenRun>

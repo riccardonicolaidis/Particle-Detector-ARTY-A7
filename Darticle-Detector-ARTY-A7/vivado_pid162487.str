@@ -1,0 +1,335 @@
+/*
+
+Xilinx Vivado v2022.1 (64-bit) [Major: 2022, Minor: 1]
+SW Build: 3526262 on Mon Apr 18 15:47:01 MDT 2022
+IP Build: 3524634 on Mon Apr 18 20:55:01 MDT 2022
+
+Process ID (PID): 162487
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Mon Apr 08 14:34:06 CEST 2024
+Time zone: 	Central European Standard Time (Europe/Rome)
+
+OS: Ubuntu
+OS Version: 6.5.0-27-generic
+OS Architecture: amd64
+Available processors (cores): 8
+
+Display: 0
+Screen size: 1920x1200
+Screen resolution (DPI): 100
+Available screens: 1
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+Scale size: 12
+
+Java version: 	11.0.11 64-bit
+Java home: 	/home/riccardo/XILINX/Vivado/2022.1/tps/lnx64/jre11.0.11_9
+Java executable: 	/home/riccardo/XILINX/Vivado/2022.1/tps/lnx64/jre11.0.11_9/bin/java
+Java arguments: 	[-Dsun.java2d.pmoffscreen=false, -Dhttps.protocols=TLSv1,TLSv1.1,TLSv1.2, -Dsun.java2d.xrender=false, -Djdk.gtk.version=2, -Dsun.java2d.uiScale.enabled=false, -Xverify:none, -Dswing.aatext=true, -XX:-UsePerfData, -Djdk.map.althashing.threshold=512, -XX:StringTableSize=4072, --add-opens=java.desktop/com.sun.awt=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.base/java.nio=ALL-UNNAMED, --add-opens=java.desktop/sun.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/java.awt.event=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-exports=java.base/java.nio=ALL-UNNAMED, --add-exports=java.desktop/sun.swing=ALL-UNNAMED, --add-exports=java.desktop/javax.swing=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-exports=java.desktop/sun.swing=ALL-UNNAMED, --add-exports=java.desktop/sun.swing.table=ALL-UNNAMED, --add-exports=java.desktop/sun.swing.plaf.synth=ALL-UNNAMED, --add-exports=java.desktop/sun.awt.shell=ALL-UNNAMED, --add-exports=java.base/sun.security.action=ALL-UNNAMED, --add-exports=java.desktop/sun.font=ALL-UNNAMED, --add-opens=java.desktop/sun.awt.X11=ALL-UNNAMED, -XX:NewSize=60m, -XX:MaxNewSize=60m, -Xms256m, -Xmx3072m, -Xss5m, -Xrs]
+Java initial memory (-Xms): 	256 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	riccardo
+User home directory: /home/riccardo
+User working directory: /home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Darticle-Detector-ARTY-A7
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: /home/riccardo/XILINX/Vivado
+HDI_APPROOT: /home/riccardo/XILINX/Vivado/2022.1
+RDI_DATADIR: /home/riccardo/XILINX/Vivado/2022.1/data
+RDI_BINDIR: /home/riccardo/XILINX/Vivado/2022.1/bin
+
+Vivado preferences file: /home/riccardo/.Xilinx/Vivado/2022.1/vivado.xml
+Vivado preferences directory: /home/riccardo/.Xilinx/Vivado/2022.1/
+Vivado layouts directory: /home/riccardo/.Xilinx/Vivado/2022.1/data/layouts
+PlanAhead jar file: 	/home/riccardo/XILINX/Vivado/2022.1/lib/classes/planAhead.jar
+Vivado log file: 	/home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Darticle-Detector-ARTY-A7/vivado.log
+Vivado journal file: 	/home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Darticle-Detector-ARTY-A7/vivado.jou
+Engine tmp dir: 	./.Xil/Vivado-162487-riccardo-ThinkPad-X1-Carbon-Gen-9
+
+Xilinx Environment Variables
+----------------------------
+XILINX: /home/riccardo/XILINX/Vivado/2022.1/ids_lite/ISE
+XILINX_DSP: /home/riccardo/XILINX/Vivado/2022.1/ids_lite/ISE
+XILINX_HLS: /home/riccardo/XILINX/Vitis_HLS/2022.1
+XILINX_PLANAHEAD: /home/riccardo/XILINX/Vivado/2022.1
+XILINX_SDK: /home/riccardo/XILINX/Vitis/2022.1
+XILINX_VITIS: /home/riccardo/XILINX/Vitis/2022.1
+XILINX_VIVADO: /home/riccardo/XILINX/Vivado/2022.1
+XILINX_VIVADO_HLS: /home/riccardo/XILINX/Vivado/2022.1
+
+
+GUI allocated memory:	370 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,961 MB
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// TclEventType: PROJECT_OPEN_DIALOG
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 102 MB (+104103kb) [00:00:05]
+// [Engine Memory]: 1,882 MB (+1821764kb) [00:00:05]
+// Opening Vivado Project: ./Darticle-Detector-ARTY-A7.xpr. Version: Vivado v2022.1 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: FLOW_ADDED
+// Tcl Message: open_project ./Darticle-Detector-ARTY-A7.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: LOAD_FEATURE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,848 MB. GUI used memory: 59 MB. Current time: 4/8/24, 2:34:07 PM CEST
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project ./Darticle-Detector-ARTY-A7.xpr 
+// Tcl Message: INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory '/home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Darticle-Detector-ARTY-A7/Darticle-Detector-ARTY-A7.gen/sources_1'. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/riccardo/XILINX/Vivado/2022.1/data/ip'. 
+// TclEventType: PROJECT_NEW
+// WARNING: HEventQueue.dispatchEvent() is taking  2544 ms.
+// Tcl Message: open_project: Time (s): cpu = 00:00:21 ; elapsed = 00:00:08 . Memory (MB): peak = 7664.941 ; gain = 109.184 ; free physical = 1265 ; free virtual = 11046 
+// [Engine Memory]: 2,017 MB (+43004kb) [00:00:15]
+// Project name: Darticle-Detector-ARTY-A7; location: /home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Darticle-Detector-ARTY-A7; part: xc7a35ticsg324-1L
+dismissDialog("Open Project"); // bA
+// [GUI Memory]: 113 MB (+6412kb) [00:00:16]
+// [GUI Memory]: 137 MB (+18962kb) [00:00:18]
+// Tcl Message: update_compile_order -fileset sources_1 
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f
+dismissDialog("Critical Messages"); // a
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, muon_telescope_top_module (muon_telescope_top.sv)]", 2); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, muon_telescope_top_module (muon_telescope_top.sv), DEBOUNCER_BTNS : debouncing_array (debouncing_array.sv)]", 3); // D
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, muon_telescope_top_module (muon_telescope_top.sv), DEBOUNCER_BTNS : debouncing_array (debouncing_array.sv)]", 3); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, muon_telescope_top_module (muon_telescope_top.sv), WRAPPING_CIRCUIT_PMOD_AD1 : pmod_adc_ad7476a(behavior) (pmod_wrapper.vhd)]", 5); // D
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, muon_telescope_top_module (muon_telescope_top.sv), WRAPPING_CIRCUIT_PMOD_AD1 : pmod_adc_ad7476a(behavior) (pmod_wrapper.vhd)]", 5); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, muon_telescope_top_module (muon_telescope_top.sv), DSP_from_XADC : DSP_pipeline (DSP_pipeline.sv)]", 6); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, muon_telescope_top_module (muon_telescope_top.sv), DSP_from_XADC : DSP_pipeline (DSP_pipeline.sv), DSP_pipeline_generation[0].DC_BLOCKERS_MODULES : DC_Blocker (DC_blocker.sv)]", 9); // D
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, muon_telescope_top_module (muon_telescope_top.sv), DSP_from_XADC : DSP_pipeline (DSP_pipeline.sv), DSP_pipeline_generation[0].DC_BLOCKERS_MODULES : DC_Blocker (DC_blocker.sv)]", 9); // D
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, muon_telescope_top_module (muon_telescope_top.sv), DSP_from_XADC : DSP_pipeline (DSP_pipeline.sv)]", 6); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, muon_telescope_top_module (muon_telescope_top.sv), TEST_UNIT : test_unit (test_unit.sv)]", 10); // D
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, muon_telescope_top_module (muon_telescope_top.sv), TEST_UNIT : test_unit (test_unit.sv)]", 10); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, muon_telescope_top_module (muon_telescope_top.sv), PRINT_DATA_VIA_UART_CABLE : Printer_uart (Printer_uart.sv)]", 9); // D
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, muon_telescope_top_module (muon_telescope_top.sv), PRINT_DATA_VIA_UART_CABLE : Printer_uart (Printer_uart.sv)]", 9); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, muon_telescope_top_module (muon_telescope_top.sv)]", 2, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, muon_telescope_top_module (muon_telescope_top.sv)]", 2, true, false, false, false, false, true); // D - Double Click - Node
+// WARNING: HEventQueue.dispatchEvent() is taking  1672 ms.
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, muon_telescope_top_module (muon_telescope_top.sv)]", 2, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, muon_telescope_top_module (muon_telescope_top.sv)]", 2, true, false, false, false, false, true); // D - Double Click - Node
+selectCodeEditor("muon_telescope_top.sv", 183, 381); // be
+// [GUI Memory]: 145 MB (+1160kb) [00:00:57]
+// Elapsed time: 11 seconds
+selectButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "run_bitstream"); // D
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// Tcl Message: INFO: [Project 1-1160] Copying file /home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Darticle-Detector-ARTY-A7/Darticle-Detector-ARTY-A7.runs/synth_1/muon_telescope_top_module.dcp to /home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Darticle-Detector-ARTY-A7/Darticle-Detector-ARTY-A7.srcs/utils_1/imports/synth_1 and adding it to utils fileset 
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run fifo_generator_time_synth_1 
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run fifo_generator_area_synth_1 
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run fifo_generator_uart_synth_1 
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run fifo_generator_peak_synth_1 
+dismissDialog("Resetting Runs"); // bA
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// [Engine Memory]: 2,141 MB (+24778kb) [00:01:08]
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'fifo_generator_time'... INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'fifo_generator_area'... INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'fifo_generator_uart'... INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'fifo_generator_peak'... 
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Mon Apr  8 14:35:05 2024] Launched impl_1... Run output will be captured here: /home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Darticle-Detector-ARTY-A7/Darticle-Detector-ARTY-A7.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bA
+// HMemoryUtils.trashcanNow. Engine heap size: 2,127 MB. GUI used memory: 82 MB. Current time: 4/8/24, 2:35:07 PM CEST
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 10 seconds
+selectButton(PAResourceQtoS.SyntheticaStateMonitor_CANCEL, "Cancel"); // g
+selectButton("OptionPane.button", "Cancel Process"); // JButton
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run fifo_generator_time_synth_1 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run fifo_generator_area_synth_1 
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run fifo_generator_uart_synth_1 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run fifo_generator_peak_synth_1 
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+dismissDialog("Resetting Runs"); // bA
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("muon_telescope_top.sv", 194, 396); // be
+selectCodeEditor("muon_telescope_top.sv", 183, 413); // be
+selectCodeEditor("muon_telescope_top.sv", 191, 415); // be
+// Elapsed time: 12 seconds
+selectCodeEditor("muon_telescope_top.sv", 181, 493); // be
+selectCodeEditor("muon_telescope_top.sv", 184, 486); // be
+// Elapsed time: 10 seconds
+selectCodeEditor("muon_telescope_top.sv", 353, 384); // be
+selectCodeEditor("muon_telescope_top.sv", 336, 187); // be
+selectCodeEditor("muon_telescope_top.sv", 336, 187, false, false, false, false, true); // be - Double Click
+typeControlKey((HResource) null, "muon_telescope_top.sv", 'c'); // be
+selectCodeEditor("muon_telescope_top.sv", 158, 218); // be
+selectCodeEditor("muon_telescope_top.sv", 158, 218, false, false, false, false, true); // be - Double Click
+typeControlKey((HResource) null, "muon_telescope_top.sv", 'v'); // be
+selectCodeEditor("muon_telescope_top.sv", 222, 230); // be
+selectCodeEditor("muon_telescope_top.sv", 222, 230, false, false, false, false, true); // be - Double Click
+typeControlKey((HResource) null, "muon_telescope_top.sv", 'v'); // be
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "run_bitstream"); // D
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+dismissDialog("Resetting Runs"); // bA
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Mon Apr  8 14:36:17 2024] Launched impl_1... Run output will be captured here: /home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Darticle-Detector-ARTY-A7/Darticle-Detector-ARTY-A7.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bA
+// TclEventType: RUN_STATUS_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,167 MB. GUI used memory: 81 MB. Current time: 4/8/24, 2:36:22 PM CEST
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 101 seconds
+selectCodeEditor("muon_telescope_top.sv", 417, 184); // be
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 30 seconds
+dismissDialog("Bitstream Generation Completed"); // ag
+selectCodeEditor("muon_telescope_top.sv", 258, 379); // be
+selectCodeEditor("muon_telescope_top.sv", 258, 379); // be
+selectCodeEditor("muon_telescope_top.sv", 359, 363); // be
+// Elapsed time: 17 seconds
+selectCodeEditor("muon_telescope_top.sv", 312, 354); // be
+selectCodeEditor("muon_telescope_top.sv", 215, 331); // be
+selectCodeEditor("muon_telescope_top.sv", 398, 320); // be
+selectCodeEditor("muon_telescope_top.sv", 412, 364); // be
+// [GUI Memory]: 153 MB (+738kb) [00:20:45]

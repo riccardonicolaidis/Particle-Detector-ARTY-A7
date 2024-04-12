@@ -1,0 +1,72 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:47:01 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Mon Apr  8 14:33:52 2024
+# Process ID: 162487
+# Current directory: /home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Darticle-Detector-ARTY-A7
+# Command line: vivado ./Darticle-Detector-ARTY-A7.xpr
+# Log file: /home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Darticle-Detector-ARTY-A7/vivado.log
+# Journal file: /home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Darticle-Detector-ARTY-A7/vivado.jou
+# Running On: riccardo-ThinkPad-X1-Carbon-Gen-9, OS: Linux, CPU Frequency: 1193.881 MHz, CPU Physical cores: 4, Host memory: 16467 MB
+#-----------------------------------------------------------
+start_gui
+open_project ./Darticle-Detector-ARTY-A7.xpr
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at /home/riccardo/XILINX/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es_revb:part0:1.0 available at /home/riccardo/XILINX/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120_revb/es/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at /home/riccardo/XILINX/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at /home/riccardo/XILINX/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at /home/riccardo/XILINX/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at /home/riccardo/XILINX/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory '/home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Darticle-Detector-ARTY-A7/Darticle-Detector-ARTY-A7.gen/sources_1'.
+CRITICAL WARNING: [Project 1-19] Could not find the file '/home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Firmware-SRC/RGB_manager.sv'.
+CRITICAL WARNING: [Project 1-19] Could not find the file '/home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Firmware-SRC/SynchroCounter.sv'.
+CRITICAL WARNING: [Project 1-19] Could not find the file '/home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Firmware-SRC/ctrl_console_start_stop_clear.sv'.
+CRITICAL WARNING: [Project 1-19] Could not find the file '/home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Firmware-SRC/ctrl_volume.sv'.
+CRITICAL WARNING: [Project 1-19] Could not find the file '/home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Firmware-SRC/fifo.sv'.
+CRITICAL WARNING: [Project 1-19] Could not find the file '/home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Firmware-SRC/fifo_ctrl.sv'.
+CRITICAL WARNING: [Project 1-19] Could not find the file '/home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Firmware-SRC/pwm_RGB.sv'.
+CRITICAL WARNING: [Project 1-19] Could not find the file '/home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Firmware-SRC/reg_file.sv'.
+CRITICAL WARNING: [Project 1-19] Could not find the file '/home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Firmware-SRC/toggle_ff.sv'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/riccardo/XILINX/Vivado/2022.1/data/ip'.
+open_project: Time (s): cpu = 00:00:21 ; elapsed = 00:00:08 . Memory (MB): peak = 7664.941 ; gain = 109.184 ; free physical = 1265 ; free virtual = 11046
+update_compile_order -fileset sources_1
+reset_run synth_1
+INFO: [Project 1-1160] Copying file /home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Darticle-Detector-ARTY-A7/Darticle-Detector-ARTY-A7.runs/synth_1/muon_telescope_top_module.dcp to /home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Darticle-Detector-ARTY-A7/Darticle-Detector-ARTY-A7.srcs/utils_1/imports/synth_1 and adding it to utils fileset
+reset_run fifo_generator_time_synth_1
+reset_run fifo_generator_area_synth_1
+reset_run fifo_generator_uart_synth_1
+reset_run fifo_generator_peak_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'fifo_generator_time'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'fifo_generator_area'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'fifo_generator_uart'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'fifo_generator_peak'...
+[Mon Apr  8 14:35:05 2024] Launched fifo_generator_time_synth_1, fifo_generator_area_synth_1, fifo_generator_uart_synth_1, fifo_generator_peak_synth_1, synth_1...
+Run output will be captured here:
+fifo_generator_time_synth_1: /home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Darticle-Detector-ARTY-A7/Darticle-Detector-ARTY-A7.runs/fifo_generator_time_synth_1/runme.log
+fifo_generator_area_synth_1: /home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Darticle-Detector-ARTY-A7/Darticle-Detector-ARTY-A7.runs/fifo_generator_area_synth_1/runme.log
+fifo_generator_uart_synth_1: /home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Darticle-Detector-ARTY-A7/Darticle-Detector-ARTY-A7.runs/fifo_generator_uart_synth_1/runme.log
+fifo_generator_peak_synth_1: /home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Darticle-Detector-ARTY-A7/Darticle-Detector-ARTY-A7.runs/fifo_generator_peak_synth_1/runme.log
+synth_1: /home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Darticle-Detector-ARTY-A7/Darticle-Detector-ARTY-A7.runs/synth_1/runme.log
+[Mon Apr  8 14:35:05 2024] Launched impl_1...
+Run output will be captured here: /home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Darticle-Detector-ARTY-A7/Darticle-Detector-ARTY-A7.runs/impl_1/runme.log
+reset_run synth_1
+reset_run fifo_generator_time_synth_1
+reset_run fifo_generator_area_synth_1
+reset_run fifo_generator_uart_synth_1
+reset_run fifo_generator_peak_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Mon Apr  8 14:36:17 2024] Launched fifo_generator_time_synth_1, fifo_generator_area_synth_1, fifo_generator_uart_synth_1, fifo_generator_peak_synth_1, synth_1...
+Run output will be captured here:
+fifo_generator_time_synth_1: /home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Darticle-Detector-ARTY-A7/Darticle-Detector-ARTY-A7.runs/fifo_generator_time_synth_1/runme.log
+fifo_generator_area_synth_1: /home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Darticle-Detector-ARTY-A7/Darticle-Detector-ARTY-A7.runs/fifo_generator_area_synth_1/runme.log
+fifo_generator_uart_synth_1: /home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Darticle-Detector-ARTY-A7/Darticle-Detector-ARTY-A7.runs/fifo_generator_uart_synth_1/runme.log
+fifo_generator_peak_synth_1: /home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Darticle-Detector-ARTY-A7/Darticle-Detector-ARTY-A7.runs/fifo_generator_peak_synth_1/runme.log
+synth_1: /home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Darticle-Detector-ARTY-A7/Darticle-Detector-ARTY-A7.runs/synth_1/runme.log
+[Mon Apr  8 14:36:17 2024] Launched impl_1...
+Run output will be captured here: /home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Darticle-Detector-ARTY-A7/Darticle-Detector-ARTY-A7.runs/impl_1/runme.log

@@ -1,0 +1,82 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:47:01 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Fri Apr 12 15:41:12 2024
+# Process ID: 3993
+# Current directory: /home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7
+# Command line: vivado ./Darticle-Detector-ARTY-A7/Darticle-Detector-ARTY-A7.xpr
+# Log file: /home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/vivado.log
+# Journal file: /home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/vivado.jou
+# Running On: riccardo-ThinkPad-X1-Carbon-Gen-9, OS: Linux, CPU Frequency: 400.000 MHz, CPU Physical cores: 4, Host memory: 16467 MB
+#-----------------------------------------------------------
+start_gui
+open_project ./Darticle-Detector-ARTY-A7/Darticle-Detector-ARTY-A7.xpr
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at /home/riccardo/XILINX/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es_revb:part0:1.0 available at /home/riccardo/XILINX/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120_revb/es/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at /home/riccardo/XILINX/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at /home/riccardo/XILINX/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at /home/riccardo/XILINX/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at /home/riccardo/XILINX/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory '/home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Darticle-Detector-ARTY-A7/Darticle-Detector-ARTY-A7.gen/sources_1'.
+CRITICAL WARNING: [Project 1-19] Could not find the file '/home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Firmware-SRC/RGB_manager.sv'.
+CRITICAL WARNING: [Project 1-19] Could not find the file '/home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Firmware-SRC/SynchroCounter.sv'.
+CRITICAL WARNING: [Project 1-19] Could not find the file '/home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Firmware-SRC/ctrl_console_start_stop_clear.sv'.
+CRITICAL WARNING: [Project 1-19] Could not find the file '/home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Firmware-SRC/ctrl_volume.sv'.
+CRITICAL WARNING: [Project 1-19] Could not find the file '/home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Firmware-SRC/fifo.sv'.
+CRITICAL WARNING: [Project 1-19] Could not find the file '/home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Firmware-SRC/fifo_ctrl.sv'.
+CRITICAL WARNING: [Project 1-19] Could not find the file '/home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Firmware-SRC/pwm_RGB.sv'.
+CRITICAL WARNING: [Project 1-19] Could not find the file '/home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Firmware-SRC/reg_file.sv'.
+CRITICAL WARNING: [Project 1-19] Could not find the file '/home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Firmware-SRC/toggle_ff.sv'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/riccardo/XILINX/Vivado/2022.1/data/ip'.
+open_project: Time (s): cpu = 00:00:26 ; elapsed = 00:00:09 . Memory (MB): peak = 7673.992 ; gain = 114.184 ; free physical = 7812 ; free virtual = 14586
+update_compile_order -fileset sources_1
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file /home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Darticle-Detector-ARTY-A7/Darticle-Detector-ARTY-A7.srcs/utils_1/imports/synth_1/muon_telescope_top_module.dcp with file /home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Darticle-Detector-ARTY-A7/Darticle-Detector-ARTY-A7.runs/synth_1/muon_telescope_top_module.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri Apr 12 15:44:04 2024] Launched synth_1...
+Run output will be captured here: /home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Darticle-Detector-ARTY-A7/Darticle-Detector-ARTY-A7.runs/synth_1/runme.log
+[Fri Apr 12 15:44:04 2024] Launched impl_1...
+Run output will be captured here: /home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Darticle-Detector-ARTY-A7/Darticle-Detector-ARTY-A7.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2022.1
+  **** Build date : Apr 18 2022 at 16:10:30
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2022.1.0
+  ****** Build date   : Apr 12 2022-21:12:08
+    **** Build number : 2022.1.1649790728
+      ** Copyright 2017-2024 Xilinx, Inc. All Rights Reserved.
+
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210319AE1A0FA
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {/home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Darticle-Detector-ARTY-A7/Darticle-Detector-ARTY-A7.runs/impl_1/muon_telescope_top_module.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210319AE1A0FA
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Apr 12 16:20:48 2024...

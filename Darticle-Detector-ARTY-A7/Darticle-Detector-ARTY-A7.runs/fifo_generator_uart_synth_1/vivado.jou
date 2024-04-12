@@ -2,12 +2,12 @@
 # Vivado v2022.1 (64-bit)
 # SW Build 3526262 on Mon Apr 18 15:47:01 MDT 2022
 # IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
-# Start of session at: Tue Feb 28 16:45:33 2023
-# Process ID: 11245
+# Start of session at: Mon Apr  8 14:36:20 2024
+# Process ID: 163518
 # Current directory: /home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Darticle-Detector-ARTY-A7/Darticle-Detector-ARTY-A7.runs/fifo_generator_uart_synth_1
 # Command line: vivado -log fifo_generator_uart.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source fifo_generator_uart.tcl
 # Log file: /home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Darticle-Detector-ARTY-A7/Darticle-Detector-ARTY-A7.runs/fifo_generator_uart_synth_1/fifo_generator_uart.vds
 # Journal file: /home/riccardo/Documenti/VivadoVitisProjects/Particle-Detector-ARTY-A7/Darticle-Detector-ARTY-A7/Darticle-Detector-ARTY-A7.runs/fifo_generator_uart_synth_1/vivado.jou
-# Running On: riccardo-ThinkPad-X1-Carbon-Gen-9, OS: Linux, CPU Frequency: 4100.000 MHz, CPU Physical cores: 4, Host memory: 16484 MB
+# Running On: riccardo-ThinkPad-X1-Carbon-Gen-9, OS: Linux, CPU Frequency: 4100.000 MHz, CPU Physical cores: 4, Host memory: 16467 MB
 #-----------------------------------------------------------
 source fifo_generator_uart.tcl -notrace
